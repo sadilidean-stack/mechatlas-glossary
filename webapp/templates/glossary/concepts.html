@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Concepts</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+
+
+
+    <div id="loading-overlay">
+        <div class="gear-spinner">
+            <span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span>
+        </div>
+    </div>
+
+
+
+
+    <div class="container">
+        <h1 class="gradient-title">Concepts Glossary</h1>
+        <p class="subtitle">Browse all topics below</p>
+
+
+
+        <!-- Advanced mode button -->
+        <a href="{{ url_for('index') }}" class="top-button">
+            Back to Homepage
+        </a>
+
+    </div>
+
+    </div>
+
+    <!-- Topics list (static, not clickable) -->
+    <section class="glossary-list">
+
+        <!-- AC Circuits Containing Resistance Only -->
+        <article class="glossary-item">
+            <h2>AC Circuits Containing Resistance Only</h2>
+            <p>A type of AC circuit where only resistors are present.</p>
+        </article>
+
+        <!-- AC Cycles -->
+        <article class="glossary-item">
+            <h2>AC Cycles</h2>
+            <p>One full pattern of an alternating waveform.</p>
+        </article>
+
+        <!-- Ackerman Steering Mechanism -->
+        <article class="glossary-item">
+            <h2>Ackerman Steering Mechanism</h2>
+            <p>A steering geometry ensuring all wheels follow concentric paths during a turn.</p>
+        </article>
+
+        <!-- Additive Manufacturing -->
+        <article class="glossary-item">
+            <h2>Additive Manufacturing</h2>
+            <p>A manufacturing process that builds objects layer by layer from digital models.</p>
+        </article>
+
+        <!-- Addressing & Tag-Based Programming -->
+        <article class="glossary-item">
+            <h2>Addressing & Tag-Based Programming</h2>
+            <p>Uses fixed memory locations or named tags to improve readability and troubleshooting.</p>
+        </article>
+
+        <!-- ADC -->
+        <article class="glossary-item">
+            <h2>Analog-to-Digital Conversion (ADC)</h2>
+            <p>Process of converting analog sensor signals into digital values.</p>
+        </article>
+
+        <!-- ALU -->
+        <article class="glossary-item">
+            <h2>ALU — Arithmetic Logic Unit</h2>
+            <p>Performs arithmetic and logical operations on binary data.</p>
+        </article>
+
+        <!-- Analog Signal Scaling -->
+        <article class="glossary-item">
+            <h2>Analog Signal Scaling</h2>
+            <p>Adjusting sensor outputs to fit the required input range of a controller or ADC.</p>
+        </article>
+
+        <!-- AND Gate -->
+        <article class="glossary-item">
+            <h2>AND Gate</h2>
+            <p>A logic gate that outputs HIGH only if all inputs are HIGH.</p>
+        </article>
+
+        <!-- Alternating Current -->
+        <article class="glossary-item">
+            <h2>Alternating Current</h2>
+            <p>Electrical current that periodically reverses direction; AC is widely used for power
+                distribution and transformation.</p>
+        </article>
+
+        <!-- Alternating Current Transmission -->
+        <article class="glossary-item">
+            <h2>Alternating Current Transmission</h2>
+            <p>Delivering electrical power over long distances using AC with transformers to reduce
+                losses.</p>
+        </article>
+
+        <!-- Automatic Retraction Sequence -->
+        <article class="glossary-item">
+            <h2>Automatic Retraction Sequence</h2>
+            <p>A programmed pneumatic sequence where a cylinder retracts automatically after a delay.
+            </p>
+        </article>
+
+        <!-- Automatic Valve Control -->
+        <article class="glossary-item">
+            <h2>Automatic Valve Control</h2>
+            <p>Valve actuated automatically (solenoid, pilot, sensor) for precise flow and actuator
+                control.</p>
+        </article>
+
+        <!-- Batch Production -->
+        <article class="glossary-item">
+            <h2>Batch Production</h2>
+            <p>Manufacturing method where products are made in groups or batches, balancing efficiency
+                and flexibility.</p>
+        </article>
+
+        <!-- Block Diagram -->
+        <article class="glossary-item">
+            <h2>Block Diagram</h2>
+            <p>A simplified graphical representation of a system that uses blocks to show components and
+                arrows to show signal flow.</p>
+        </article>
+
+        <!-- BUSES -->
+        <article class="glossary-item">
+            <h2>BUSES (Data, Address, Control)</h2>
+            <p>Electrical pathways for transferring data, addresses, and control signals in
+                microprocessor systems.</p>
+        </article>
+
+        <!-- CAD/CAM Integration -->
+        <article class="glossary-item">
+            <h2>CAD/CAM Integration</h2>
+            <p>Combining computer-aided design and manufacturing to streamline product design and
+                automated production.</p>
+        </article>
+
+        <!-- CANopen Node Communication -->
+        <article class="glossary-item">
+            <h2>CANopen Node Communication</h2>
+            <p>Protocol enabling embedded devices to communicate on a CAN network with standardized
+                profiles.</p>
+        </article>
+
+        <!-- Capacitance -->
+        <article class="glossary-item">
+            <h2>Capacitance</h2>
+            <p>Property allowing components to store energy in an electric field, resisting sudden
+                voltage changes.</p>
+        </article>
+
+        <!-- Circuit -->
+        <article class="glossary-item">
+            <h2>Circuit</h2>
+            <p>A closed path that allows current to flow, distributing energy to devices and systems.
+            </p>
+        </article>
+
+        <!-- Closed-loop Control -->
+        <article class="glossary-item">
+            <h2>Closed-loop Control</h2>
+            <p>System where output is continuously measured and corrected to match the desired input.
+            </p>
+        </article>
+
+        <!-- Communication Protocols -->
+        <article class="glossary-item">
+            <h2>Communication Protocols</h2>
+            <p>Rules governing data exchange between devices, ensuring correct serial, I2C, SPI, or
+                wireless communication.</p>
+        </article>
+
+        <!-- Control Logic Sequences -->
+        <article class="glossary-item">
+            <h2>Control Logic Sequences</h2>
+            <p>Step-by-step logical operations performed by the PLC, used for motor circuits, conveyors,
+                filling systems, and safety shutdowns.</p>
+        </article>
+
+        <!-- Control Loops -->
+        <article class="glossary-item">
+            <h2>Control Loops</h2>
+            <p>Systems that monitor process variables, compare with setpoints, and adjust manipulated
+                variables to maintain stability and accuracy.</p>
+        </article>
+
+        <!-- CPU -->
+        <article class="glossary-item">
+            <h2>CPU — Central Processing Unit</h2>
+            <p>Main processor that fetches, decodes, and executes instructions, coordinating all
+                operations within the computer.</p>
+        </article>
+
+        <!-- Control Unit -->
+        <article class="glossary-item">
+            <h2>CU — Control Unit</h2>
+            <p>Manages CPU activities, generating timing and control signals, and directing data flow
+                during the fetch–decode–execute cycle.</p>
+        </article>
+
+        <!-- Current -->
+        <article class="glossary-item">
+            <h2>Current</h2>
+            <p>Flow of electric charge through a conductor, powering devices and measured in amperes
+                (A).</p>
+        </article>
+
+        <!-- Current and Voltage in Resistive Circuits -->
+        <article class="glossary-item">
+            <h2>Current and Voltage in Resistive Circuits</h2>
+            <p>In purely resistive AC circuits, voltage and current follow each other exactly, governed
+                by Ohm's Law (I = V/R).</p>
+        </article>
+
+        <!-- DC and AC Current Flows -->
+        <article class="glossary-item">
+            <h2>DC and AC Current Flows</h2>
+            <p>DC flows steadily in one direction, while AC alternates direction repeatedly, affecting
+                measurement and circuit behavior.</p>
+        </article>
+
+        <!-- Digital and Analog I/O Interfacing -->
+        <article class="glossary-item">
+            <h2>Digital and Analog I/O Interfacing</h2>
+            <p>Techniques for reading digital/analog inputs and controlling outputs, enabling switches,
+                LEDs, buzzers, and ADC/PWM signals.</p>
+        </article>
+
+        <!-- Digital Signal Interpretation -->
+        <article class="glossary-item">
+            <h2>Digital Signal Interpretation</h2>
+            <p>Converts raw digital sensor outputs into meaningful data for reliable system integration.
+            </p>
+        </article>
+
+        <!-- Digital vs. Analog I/O -->
+        <article class="glossary-item">
+            <h2>Digital vs. Analog I/O</h2>
+            <p>Digital signals are ON/OFF (1/0), while analog signals vary continuously (e.g., 0–10V,
+                4–20mA) for real-world interfacing.</p>
+        </article>
+
+        <!-- Driving Digital Outputs -->
+        <article class="glossary-item">
+            <h2>Driving Digital Outputs</h2>
+            <p>Controlling devices like LEDs or buzzers using microcontroller pins to indicate status or
+                actuate systems.</p>
+        </article>
+
+        <!-- Electrical Latching Circuit -->
+        <article class="glossary-item">
+            <h2>Electrical Latching Circuit</h2>
+            <p>Circuit that maintains output state after input is removed, commonly used in automation
+                for continuous operation.</p>
+        </article>
+
+        <!-- Embedded Programming -->
+        <article class="glossary-item">
+            <h2>Embedded Programming (C / Arduino)</h2>
+            <p>Programming microcontrollers with C or Arduino to control pins, sensors, actuators, and
+                implement logic.</p>
+        </article>
+
+        <!-- EMF of Self-Induction -->
+        <article class="glossary-item">
+            <h2>EMF of Self-Induction</h2>
+            <p>Voltage generated in a coil opposing current change, fundamental to inductors, chokes,
+                and transformers.</p>
+        </article>
+
+        <!-- EtherCAT Data Exchange -->
+        <article class="glossary-item">
+            <h2>EtherCAT Data Exchange</h2>
+            <p>High-performance, real-time Ethernet-based protocol enabling synchronized, low-latency
+                communication for automation and robotics.</p>
+        </article>
+
+        <!-- Feedback-Based Actuation -->
+        <article class="glossary-item">
+            <h2>Feedback-Based Actuation</h2>
+            <p>A control method where actuators move only after receiving confirmatory sensor signals.
+            </p>
+        </article>
+
+        <!-- Fixed Resistors -->
+        <article class="glossary-item">
+            <h2>Fixed Resistors</h2>
+            <p>Resistors with constant resistance used to limit current and divide voltage.</p>
+        </article>
+
+        <!-- Forward Bias Operation -->
+        <article class="glossary-item">
+            <h2>Forward Bias Operation</h2>
+            <p>Condition where a diode conducts electricity freely, allowing current to pass when correctly
+                polarized.</p>
+        </article>
+
+        <!-- Friction -->
+        <article class="glossary-item">
+            <h2>Friction</h2>
+            <p>Resistive force when two surfaces move against each other, converting kinetic energy into heat and
+                enabling grip.</p>
+        </article>
+
+        <!-- Full-Step Mode -->
+        <article class="glossary-item">
+            <h2>Full-Step Mode</h2>
+            <p>Full-step mode is a stepper motor driving method where the motor moves one full step per pulse,
+                energizing one or two motor windings at a time to achieve the standard step angle.</p>
+        </article>
+
+        <!-- Full-Wave Rectification -->
+        <article class="glossary-item">
+            <h2>Full-Wave Rectification</h2>
+            <p>Converts both halves of an AC waveform to DC using a bridge diode configuration, producing smoother
+                output.</p>
+        </article>
+
+        <!-- Half-Step Mode -->
+        <article class="glossary-item">
+            <h2>Half-Step Mode</h2>
+            <p>Stepper motor mode alternating between single-phase and dual-phase excitation, halving the step angle
+                compared to full-step mode.</p>
+        </article>
+
+        <!-- Half-Wave Rectification -->
+        <article class="glossary-item">
+            <h2>Half-Wave Rectification</h2>
+            <p>Converts AC to DC using a single diode, producing pulsating DC output.</p>
+        </article>
+
+        <!-- Heat Action -->
+        <article class="glossary-item">
+            <h2>Heat Action</h2>
+            <p>Thermal energy transfer driving expansion, phase changes, and energy conversion.</p>
+        </article>
+
+        <!-- Inductance in DC Circuits -->
+        <article class="glossary-item">
+            <h2>Inductance in DC Circuits</h2>
+            <p>Opposition to current change in DC circuits due to inductors, active during switching.</p>
+        </article>
+
+        <!-- Inductive Sensor Triggering -->
+        <article class="glossary-item">
+            <h2>Inductive Sensor Triggering</h2>
+            <p>Detects metal objects using electromagnetic fields, sending trigger signals to PLC inputs.</p>
+        </article>
+
+        <!-- Interlocking for Safety -->
+        <article class="glossary-item">
+            <h2>Interlocking for Safety</h2>
+            <p>Prevents unsafe machine operation by enforcing safety conditions before activation.</p>
+        </article>
+
+        <!-- Just-In-Time Production -->
+        <article class="glossary-item">
+            <h2>Just-In-Time (JIT) Production</h2>
+            <p>Production strategy that reduces inventory by producing only when needed.</p>
+        </article>
+
+        <!-- Kinematics -->
+        <article class="glossary-item">
+            <h2>Kinematics</h2>
+            <p>Mechanics branch analyzing motion without considering forces.</p>
+        </article>
+
+        <!-- Kinematics Diagram -->
+        <article class="glossary-item">
+            <h2>Kinematics Diagram</h2>
+            <p>Simplified mechanism representation showing links and joints for motion analysis.</p>
+        </article>
+
+        <!-- Ladder Logic & Boolean Operations -->
+        <article class="glossary-item">
+            <h2>Ladder Logic & Boolean Operations</h2>
+            <p>Graphical programming language resembling relay logic diagrams using AND, OR, NOT, NAND/NOR, and XOR
+                operations for sequences, interlocks, timers, and safety logic.</p>
+        </article>
+
+        <!-- Lean Manufacturing -->
+        <article class="glossary-item">
+            <h2>Lean Manufacturing</h2>
+            <p>Production philosophy focused on eliminating waste and maximizing value.</p>
+        </article>
+
+        <!-- LED Colors and Wavelengths -->
+        <article class="glossary-item">
+            <h2>LED Colors and Wavelengths</h2>
+            <p>LEDs emit colors based on semiconductor material, used in displays and lighting.</p>
+        </article>
+
+        <!-- LED Polarity -->
+        <article class="glossary-item">
+            <h2>LED Polarity</h2>
+            <p>Correct anode/cathode connection ensures LED lights up properly in circuits.</p>
+        </article>
+
+        <!-- Load-Tracking Capability -->
+        <article class="glossary-item">
+            <h2>Load‑tracking Capability</h2>
+            <p>Servo motor system adapts output when load changes, maintaining performance.</p>
+        </article>
+
+        <!-- Manual Valve Operation -->
+        <article class="glossary-item">
+            <h2>Manual Valve Operation</h2>
+            <p>The valve is operated directly by a human using lever, push button, or other manual device to shift
+                the valve spool or change flow paths in pneumatic or hydraulic systems.</p>
+        </article>
+
+        <!-- Mechanical Action -->
+        <article class="glossary-item">
+            <h2>Mechanical Action</h2>
+            <p>The motion or force generated by a mechanical system or mechanism during operation. Enables machines
+                to perform work, transmit forces, and carry out mechanical tasks.</p>
+        </article>
+
+        <!-- Mechanical Drive -->
+        <article class="glossary-item">
+            <h2>Mechanical Drive</h2>
+            <p>System of components (gears, belts, chains, shafts) that transmits power and motion from a motor or
+                engine to machine parts. Delivers required speed, torque, and motion to the load for proper machine
+                operation.</p>
+        </article>
+
+        <!-- Memory Function in Double Solenoid Valves -->
+        <article class="glossary-item">
+            <h2>Memory Function in Double Solenoid Valves</h2>
+            <p>Double solenoid valves can retain their position after the control signal is removed, reducing
+                operator intervention and automating sequences.</p>
+        </article>
+
+        <!-- Microcontroller Architecture -->
+        <article class="glossary-item">
+            <h2>Microcontroller Architecture</h2>
+            <p>Internal structure of microcontrollers including CPU, memory, and I/O ports, explaining how they
+                process data and interact with peripherals.</p>
+        </article>
+
+        <!-- Microcontroller-Based System Design -->
+        <article class="glossary-item">
+            <h2>Microcontroller-Based System Design</h2>
+            <p>Creating complete embedded systems integrating hardware and software, covering power regulation, PCB
+                layout, testing, and software–hardware integration.</p>
+        </article>
+
+        <!-- Modbus RTU -->
+        <article class="glossary-item">
+            <h2>Modbus RTU</h2>
+            <p>A serial-based industrial communication protocol (master‑slave) using binary-encoded messages with
+                CRC error checking for low‑cost communication between PLCs and field devices.</p>
+        </article>
+
+        <!-- Modbus TCP -->
+        <article class="glossary-item">
+            <h2>Modbus TCP</h2>
+            <p>A version of Modbus that wraps the standard protocol into TCP/IP packets, allowing Modbus
+                communication over Ethernet networks instead of serial lines.</p>
+        </article>
+
+        <!-- Motion -->
+        <article class="glossary-item">
+            <h2>Motion</h2>
+            <p>The change in position of an object with respect to time, a fundamental concept in mechanics
+                describing how systems move.</p>
+        </article>
+
+        <!-- NAND Gate (NOT-AND) -->
+        <article class="glossary-item">
+            <h2>NAND Gate (NOT-AND)</h2>
+            <p>A logic gate that outputs the negation of the AND operation, producing LOW only if all inputs are
+                HIGH; otherwise, output is HIGH.</p>
+        </article>
+
+        <!-- Noise Elimination -->
+        <article class="glossary-item">
+            <h2>Noise Elimination</h2>
+            <p>Techniques applied during sensor signal conditioning such as filtering, differential signaling, and
+                shielding to reduce unwanted noise from sensor signals.</p>
+        </article>
+
+        <!-- NOR Gate (NOT-OR) -->
+        <article class="glossary-item">
+            <h2>NOR Gate (NOT-OR)</h2>
+            <p>A logic gate that outputs the negation of the OR operation, giving HIGH only when all inputs are LOW.
+            </p>
+        </article>
+
+        <!-- NOT Gate (Inverter) -->
+        <article class="glossary-item">
+            <h2>NOT Gate (Inverter)</h2>
+            <p>A basic logic gate with a single input that outputs the logical negation: input 1 → output 0; input 0
+                → output 1.</p>
+        </article>
+
+        <!-- Ohm's Law -->
+        <article class="glossary-item">
+            <h2>Ohm's Law</h2>
+            <p>Fundamental relationship between voltage, current, and resistance: I = V / R, essential for designing
+                and analyzing circuits.</p>
+        </article>
+
+        <!-- Off-Delay Timer Function -->
+        <article class="glossary-item">
+            <h2>Off-Delay Timer Function</h2>
+            <p>An off-delay timer keeps the output ON even after the input turns OFF, only switching OFF after the
+                preset time expires, used when actuators must stay energized briefly.</p>
+        </article>
+
+        <!-- On-Delay Timer Function -->
+        <article class="glossary-item">
+            <h2>On-Delay Timer Function</h2>
+            <p>An on-delay timer activates its output only after the input signal has been ON for a set time, used
+                to slow down activation of solenoids or relays in pneumatic sequences.</p>
+        </article>
+
+
+        <!-- Open-Loop vs. Closed-Loop Control -->
+        <article class="glossary-item">
+            <h2>Open-Loop vs. Closed-Loop Control</h2>
+            <p>Open-loop: control based on input alone without monitoring output; Closed-loop: continuously monitors
+                output and adjusts inputs to reduce error using feedback.</p>
+        </article>
+
+        <!-- OR Gate -->
+        <article class="glossary-item">
+            <h2>OR Gate</h2>
+            <p>A basic digital logic gate that implements logical disjunction, outputting HIGH (1) if at least one
+                input is HIGH (1).</p>
+        </article>
+
+        <!-- Parallel LED Circuits -->
+        <article class="glossary-item">
+            <h2>Parallel LED Circuits</h2>
+            <p>Multiple LEDs connected across the same voltage source so each LED receives the same voltage; current
+                divides among LEDs and one failing does not stop others.</p>
+        </article>
+
+        <!-- Parallel Resistors -->
+        <article class="glossary-item">
+            <h2>Parallel Resistors</h2>
+            <p>Resistors connected across the same two nodes; currents split and equivalent resistance is less than
+                the smallest individual resistor.</p>
+        </article>
+
+        <!-- PN Junction Diode Theory -->
+        <article class="glossary-item">
+            <h2>PN Junction Diode Theory</h2>
+            <p>Fundamental semiconductor junction formed by P-type and N-type materials; conducts easily forward and
+                blocks in reverse, forming the basis of diode behavior.</p>
+        </article>
+
+        <!-- Power Factor -->
+        <article class="glossary-item">
+            <h2>Power Factor</h2>
+            <p>Cosine of the phase angle between voltage and current; indicates how effectively electrical power is
+                converted into useful work.</p>
+        </article>
+
+        <!-- Power in Resistive Circuits -->
+        <article class="glossary-item">
+            <h2>Power in Resistive Circuits</h2>
+            <p>Energy consumption in purely resistive circuits where power is P = V × I and voltage and current are
+                in phase.</p>
+        </article>
+
+        <!-- Power Transmission -->
+        <article class="glossary-item">
+            <h2>Power Transmission</h2>
+            <p>The process of transferring energy from a source to a load, enabling machines to operate by
+                delivering mechanical or electrical power.</p>
+        </article>
+
+        <!-- Pressure -->
+        <article class="glossary-item">
+            <h2>Pressure</h2>
+            <p>Force exerted per unit area on a surface; a fundamental parameter in fluid mechanics and hydraulics,
+                measured in pascals (Pa).</p>
+        </article>
+
+        <!-- Pressure Compensation -->
+        <article class="glossary-item">
+            <h2>Pressure Compensation</h2>
+            <p>Adjusting or controlling pressure so that changes in system demand or load do not cause pressure to
+                exceed or drop below certain values, or using compensating mechanisms or valves to maintain stable
+                pressure.</p>
+        </article>
+
+        <!-- Pressure Regulation -->
+        <article class="glossary-item">
+            <h2>Pressure Regulation</h2>
+            <p>The act of maintaining a desired pressure level or limiting pressure within a fluid‑power system or
+                part of it.</p>
+        </article>
+
+        <!-- Pressure Control in Fluid Power -->
+        <article class="glossary-item">
+            <h2>Pressure Control in Fluid Power</h2>
+            <p>Techniques and devices to regulate pressure within hydraulic and pneumatic systems to ensure safe,
+                reliable, and correct actuator operation.</p>
+        </article>
+
+        <!-- PROFINET Cyclic Data -->
+        <article class="glossary-item">
+            <h2>PROFINET Cyclic Data</h2>
+            <p>Industrial‑Ethernet mechanism for periodic exchange of I/O data between controllers and devices to
+                support real‑time automation tasks.</p>
+        </article>
+
+        <!-- Proximity Sensor Detection -->
+        <article class="glossary-item">
+            <h2>Proximity Sensor Detection</h2>
+            <p>Non‑contact sensing method to detect nearby objects for presence or position signals used in
+                automation sequencing.</p>
+        </article>
+
+        <!-- Process Flow Analysis -->
+        <article class="glossary-item">
+            <h2>Process Flow Analysis</h2>
+            <p>Method for studying and mapping processes to identify bottlenecks and optimize workflows for improved
+                manufacturing efficiency.</p>
+        </article>
+
+        <!-- Process Variable (PV) -->
+        <article class="glossary-item">
+            <h2>Process Variable (PV)</h2>
+            <p>The actual measured value of the quantity being controlled (e.g., temperature, pressure, level,
+                speed); used as feedback for control actions.</p>
+        </article>
+
+        <!-- Pulse Width Modulation (PWM) -->
+        <article class="glossary-item">
+            <h2>Pulse Width Modulation (PWM)</h2>
+            <p>Control technique using a train of digital pulses with variable duty cycle to encode desired power,
+                position, or speed for motors and LEDs.</p>
+        </article>
+
+        <!-- Quality Assurance -->
+        <article class="glossary-item">
+            <h2>Quality Assurance</h2>
+            <p>Systematic set of process‑focused activities intended to prevent defects by defining and maintaining
+                planned processes and standards.</p>
+        </article>
+
+        <!-- Quality Control -->
+        <article class="glossary-item">
+            <h2>Quality Control</h2>
+            <p>Inspection and testing activities used to detect and correct defects in products and processes to
+                meet specified quality requirements.</p>
+        </article>
+
+        <!-- Rack/Chassis vs. Compact PLCs -->
+        <article class="glossary-item">
+            <h2>Rack/Chassis vs. Compact PLCs</h2>
+            <p>Rack/chassis PLCs are modular with separate slots for CPU, power and I/O for large systems; compact
+                PLCs combine CPU, power and I/O in one housing for smaller machines.</p>
+        </article>
+
+        <!-- Reading Digital Inputs -->
+        <article class="glossary-item">
+            <h2>Reading Digital Inputs</h2>
+            <p>Technique for detecting state of switches, push-buttons and discrete sensors connected to
+                microcontroller or PLC input pins to trigger logic.</p>
+        </article>
+
+        <!-- Reed Switch Cylinder Positioning -->
+        <article class="glossary-item">
+            <h2>Reed Switch Cylinder Positioning</h2>
+            <p>Magnetic reed switch mounted on a cylinder to detect piston position and provide discrete feedback
+                for sequencing and control.</p>
+        </article>
+
+        <!-- REGISTERS -->
+        <article class="glossary-item">
+            <h2>REGISTERS</h2>
+            <p>Very fast storage locations inside a CPU used to hold instructions, operands and addresses
+                temporarily during processing.</p>
+        </article>
+
+        <!-- Resistance -->
+        <article class="glossary-item">
+            <h2>Resistance</h2>
+            <p>Opposition to current flow in a conductor or component, measured in ohms (Ω), used to control current
+                and create voltage drops.</p>
+        </article>
+
+        <!-- Resistor Tolerance -->
+        <article class="glossary-item">
+            <h2>Resistor Tolerance</h2>
+            <p>Maximum allowable deviation of a resistor's actual value from its nominal value, expressed as a
+                percentage; important for circuit accuracy.</p>
+        </article>
+
+        <!-- Reverse Bias Operation -->
+        <article class="glossary-item">
+            <h2>Reverse Bias Operation</h2>
+            <p>Diode condition where the anode is at lower potential than the cathode, causing the diode to block
+                forward current and pass only small leakage current.</p>
+        </article>
+
+        <!-- Review of Resistance in AC Circuits -->
+        <article class="glossary-item">
+            <h2>Review of Resistance in AC Circuits</h2>
+            <p>Behavior of resistive elements in AC circuits: they oppose current and dissipate energy as heat
+                without introducing phase shift between voltage and current.</p>
+        </article>
+
+        <!-- Rotary Power -->
+        <article class="glossary-item">
+            <h2>Rotary Power</h2>
+            <p>Power delivered through rotational motion.</p>
+        </article>
+
+        <!-- Rotational Speed -->
+        <article class="glossary-item">
+            <h2>Rotational Speed</h2>
+            <p>The number of rotations per unit time, often measured in RPM.</p>
+        </article>
+
+        <!-- Safety Interlocks & Fail-Safe Controls -->
+        <article class="glossary-item">
+            <h2>Safety Interlocks & Fail-Safe Controls</h2>
+            <p>Logical and hardware measures (emergency stop, guard interlocks, overload protection) that prevent
+                dangerous machine states and protect personnel and equipment.</p>
+        </article>
+
+        <!-- Self-Holding Relay Operation -->
+        <article class="glossary-item">
+            <h2>Self-Holding Relay Operation</h2>
+            <p>Relay wiring arrangement that latches its coil circuit after activation so the output remains
+                energized even when the initiating signal is removed.</p>
+        </article>
+
+        <!-- Sensor Calibration -->
+        <article class="glossary-item">
+            <h2>Sensor Calibration</h2>
+            <p>Process of adjusting a sensor's output or data processing to match a known reference, correcting
+                offsets and scaling for accurate measurements over time.</p>
+        </article>
+
+        <!-- Sensor-to-Relay Interface -->
+        <article class="glossary-item">
+            <h2>Sensor-to-Relay Interface</h2>
+            <p>Interface technique allowing low-power sensor outputs to drive relays or other final elements to
+                switch higher-power loads.</p>
+        </article>
+
+        <!-- Sensors and Actuators Integration -->
+        <article class="glossary-item">
+            <h2>Sensors and Actuators Integration</h2>
+            <p>Design practice for reading sensors and controlling actuators within embedded or PLC systems to
+                achieve coordinated system behavior.</p>
+        </article>
+
+        <!-- Series LED Circuits -->
+        <article class="glossary-item">
+            <h2>Series LED Circuits</h2>
+            <p>LEDs connected end-to-end so the same current flows through all devices and source voltage is divided
+                among them; used when matched brightness is required.</p>
+        </article>
+
+        <!-- Series Resistors -->
+        <article class="glossary-item">
+            <h2>Series Resistors</h2>
+            <p>Resistors connected in line so the same current flows through each; total resistance equals the sum
+                of individual values and is used to limit current or create voltage drops.</p>
+        </article>
+
+        <!-- Signal Conditioning & Electrical Isolation -->
+        <article class="glossary-item">
+            <h2>Signal Conditioning & Electrical Isolation</h2>
+            <p>Techniques to scale, filter and isolate sensor signals (often via conditioners or optocouplers) to
+                protect controllers and improve measurement quality.</p>
+        </article>
+
+        <!-- Single-loop vs Multi-loop control -->
+        <article class="glossary-item">
+            <h2>Single-loop vs Multi-loop control</h2>
+            <p>Single-loop control uses one feedback loop for one variable; multi-loop (cascade or hierarchical)
+                uses nested or parallel loops to control interdependent variables for improved performance.</p>
+        </article>
+
+        <!-- Shielding Technique -->
+        <article class="glossary-item">
+            <h2>Shielding Technique</h2>
+            <p>Use of shielded cables, grounded enclosures, twisted-pair wiring and proper grounding to protect
+                signals from EMI and preserve measurement integrity.</p>
+        </article>
+
+        <!-- Six Sigma -->
+        <article class="glossary-item">
+            <h2>Six Sigma</h2>
+            <p>Methodology for improving processes by reducing defects and variability using statistical tools and
+                disciplined problem‑solving.</p>
+        </article>
+
+        <!-- Speed/Position Correction -->
+        <article class="glossary-item">
+            <h2>Speed/Position Correction</h2>
+            <p>Servo control process using feedback to detect deviation between desired and actual speed or position
+                and to command corrective motor actions until error is minimized.</p>
+        </article>
+
+        <!-- Step Angle -->
+        <article class="glossary-item">
+            <h2>Step Angle</h2>
+            <p>Step angle is the angular movement a stepper motor makes per pulse, typically calculated using step
+                angle = 360° / (number of steps per revolution).</p>
+        </article>
+
+        <!-- Stop Circuit (NC Contact) -->
+        <article class="glossary-item">
+            <h2>Stop Circuit (NC Contact)</h2>
+            <p>A stop circuit uses a normally closed (NC) switch to immediately cut power to a device. When pressed,
+                it interrupts the current flow, stopping machine operation. This is a critical safety feature in
+                industrial automation.</p>
+        </article>
+
+        <!-- Subtractive Manufacturing -->
+        <article class="glossary-item">
+            <h2>Subtractive Manufacturing</h2>
+            <p>Manufacturing approach where material is removed (machining, milling, drilling) from a workpiece to
+                form the desired shape.</p>
+        </article>
+
+        <!-- Time-Based Cylinder Extension -->
+        <article class="glossary-item">
+            <h2>Time-Based Cylinder Extension</h2>
+            <p>Controlling cylinder extension based on a fixed timer rather than position sensing; useful for
+                repetitive operations requiring a fixed stroke duration.</p>
+        </article>
+
+        <!-- Timer-Controlled Relay Switching -->
+        <article class="glossary-item">
+            <h2>Timer-Controlled Relay Switching</h2>
+            <p>Relays switched by timer outputs to automate timed actuation of solenoids, motors, lamps or other
+                devices.</p>
+        </article>
+
+        <!-- Voltage -->
+        <article class="glossary-item">
+            <h2>Voltage</h2>
+            <p>Voltage is the electric potential difference between two points in a circuit; it provides the driving
+                force that pushes electrons through a conductor.</p>
+        </article>
+
+        <!-- Waveforms -->
+        <article class="glossary-item">
+            <h2>Waveforms</h2>
+            <p>Graphical representations of voltage or current versus time that show signal shapes such as sine,
+                square and triangular waves.</p>
+        </article>
+
+        <!-- Why DC Cannot Measure AC -->
+        <article class="glossary-item">
+            <h2>Why DC Cannot Measure AC</h2>
+            <p>DC measurement instruments expect steady signals; rapidly varying AC requires specialized techniques
+                and instruments to obtain meaningful readings.</p>
+        </article>
+
+        <!-- 3/2 Directional Control Valve Operation -->
+        <article class="glossary-item">
+            <h2>3/2 Directional Control Valve Operation</h2>
+            <p>Valve with three ports and two positions used to control single-acting actuators by connecting supply
+                to the actuator or venting it to exhaust.</p>
+        </article>
+
+        <!-- 4/2 Directional Control Valve Operation -->
+        <article class="glossary-item">
+            <h2>4/2 Directional Control Valve Operation</h2>
+            <p>Valve with four ports and two positions typically used with double-acting actuators to alternate
+                supply and exhaust, enabling extend/retract motion.</p>
+        </article>
+
+        <!-- 4/3 Directional Control Valve Operation -->
+        <article class="glossary-item">
+            <h2>4/3 Directional Control Valve Operation</h2>
+            <p>Four-port, three-position valve offering extend, retract and a neutral center state that can block,
+                vent or recirculate to hold or secure actuators.</p>
+        </article>
+
+        <!-- 5/2 Directional Control Valve Operation -->
+        <article class="glossary-item">
+            <h2>5/2 Directional Control Valve Operation</h2>
+            <p>Five-port, two-position valve commonly used in pneumatics to alternate supply to either side of a
+                double-acting cylinder while exhausting the opposite side.</p>
+        </article>
+
+        <footer>
+            <a href="{{ url_for('glossary.concept_topic') }}" class="floating-button">
+                Go to Advanced Concepts
+            </a>
+            <script>
+document.addEventListener("DOMContentLoaded", () => {
+  if (location.hash) {
+    const el = document.querySelector(location.hash);
+    if (el) {
+      el.classList.add("highlight");
+      setTimeout(() => el.classList.remove("highlight"), 2000);
+    }
+  }
+});
+</script>
+
+
+</body>
+
+</html>

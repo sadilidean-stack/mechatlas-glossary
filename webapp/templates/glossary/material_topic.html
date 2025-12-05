@@ -1,0 +1,3050 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Material Topics</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <!-- Overlay -->
+    <div id="loading-overlay">
+        <div class="gear-spinner">
+            <span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h1 id="Material-Topic">Material and Equipments</h1>--------<p-class="subtitle">Detailed view of Materials and Equipments
+            </p>
+
+            <!-- Basic mode button -->
+            <div class="basic-mode">
+                <a href="{{ url_for('index') }}" class="top-button">
+                    Back to Homepage
+                </a>
+            </div>
+            <!-- Back to Basic Mode button -->
+            <div class="basic-mode">
+                <a href="{{ url_for('glossary.concepts') }}" class="floating-button">
+                    Back to Basic Mode
+                </a>
+            </div>
+
+            <section class="glossary-topic">
+                <!-- Actuators -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Actuators">Actuators</h1>
+                        <h2>Definition</h2>
+                        <p>Devices that convert electrical signals into physical movement.</p>
+                        <h2>Function</h2>
+                        <p>Used to move or control mechanical systems, like motors or robotic arms.</p>
+                        <img src="{{ url_for('static', filename='images/materials/Actuators.png') }}" alt="Actuators"
+                            class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://tameson.com" target="_blank">Tameson – What Is An Actuator</a></li>
+                            <li><a href="https://en.wikipedia.org/wiki/Actuator" target="_blank">Wikipedia –
+                                    Actuator</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Analog Input/Output Modules -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Analog-Input/Output-Modules-(4–20mA,-0–10V)">Analog Input/Output Modules (4–20mA, 0–10V)
+                        </h1>
+                        <h2>Definition</h2>
+                        <p>Analog I/O bridges analog signals from sensors to digital signals for computers. It includes
+                            A/D
+                            conversion
+                            for input and D/A for output.</p>
+                        <h2>Function</h2>
+                        <p>Read/send variable electrical signals. Typical ranges: 0–10V, 4–20mA.</p>
+                        <img src="{{ url_for('static', filename='images/materials/Analog Input_Output Modules.png') }}"
+                            alt="Analog Input/Output Modules" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.contec.com/support/basic-knowledge/daq-control/analog-io/"
+                                    target="_blank">Contec –
+                                    Analog I/O</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Arduino -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Arduino">Arduino</h1>
+                        <h2>Definition</h2>
+                        <p>A microcontroller platform for building digital devices and interactive objects.</p>
+                        <h2>Function</h2>
+                        <p>Controls sensors, actuators, and circuits for prototyping and embedded projects.</p>
+                        <img src="{{ url_for('static', filename='images/materials/Arduino.jpeg') }}" alt="Arduino"
+                            class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://en.wikipedia.org/wiki/Arduino" target="_blank">Wikipedia – Arduino</a>
+                            </li>
+                            <li><a href="https://learn.sparkfun.com/tutorials/what-is-an-arduino"
+                                    target="_blank">SparkFun –
+                                    What is
+                                    Arduino?</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Automatic Valve Control -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Automatic-Valve-Control">Automatic Valve Control</h1>
+                        <h2>Definition</h2>
+                        <p>The valve is actuated automatically via solenoid, pilot pressure, or other actuating
+                            mechanisms
+                            without human
+                            intervention. This allows integration into automated, timed, or sensor-based systems.</p>
+                        <h2>Function</h2>
+                        <p>Actuated automatically to control fluid flow without human intervention, enabling automated
+                            operation of
+                            actuators.</p>
+                        <img src="{{ url_for('static', filename='images/materials/Automatic Valve Control.png') }}"
+                            alt="Automatic Valve Control" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.pneuparts.com/en/knowlegde-base/article/operation-3-2-valve-everything-you-need-to-know-about-it"
+                                    target="_blank">Pneuparts – Valve Operation</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Belt Drive -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Belt-Drive">Belt Drive</h1>
+                        <h2>Definition</h2>
+                        <p>A mechanical system using belts to transmit power between rotating shafts.</p>
+                        <h2>Function</h2>
+                        <p>Provides smooth, flexible, and efficient power transmission in machines.</p>
+                        <img src="{{ url_for('static', filename='images/materials/Belt.jpeg') }}" alt="Belt Drive"
+                            class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.sciencedirect.com/topics/engineering/belt-drive"
+                                    target="_blank">ScienceDirect –
+                                    Belt Drive</a></li>
+                            <li><a href="https://www.engineeringchoice.com/belt-drive/" target="_blank">Engineering
+                                    Choice –
+                                    Belt
+                                    Drive</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Blue LED -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Blue-LED">Blue LED</h1>
+                        <h2>Definition</h2>
+                        <p>Blue LEDs emit light in the 450–495 nm wavelength range and are used in displays, indicators,
+                            and
+                            decorative
+                            lighting.</p>
+                        <h2>Function</h2>
+                        <p>Displays, indicators.</p>
+                        <img src="{{ url_for('static', filename='images/materials/Blue LED.png') }}" alt="Blue LED"
+                            class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.zgsm-china.com/blog/blue-light-in-led-the-standard-and-how-to-reduce-it.html"
+                                    target="_blank">ZGSM Blog – Blue Light in LEDs</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Breadboard -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Breadboard">Breadboard</h1>
+                        <h2>Definition</h2>
+                        <p>A solderless prototyping board used for building and testing circuits. Components and wires
+                            can
+                            be inserted
+                            into the holes to create temporary connections.</p>
+                        <h2>Function</h2>
+                        <p>Facilitates prototyping and testing of electrical circuits without soldering.</p>
+                        <img src="{{ url_for('static', filename='images/materials/Breadboard.jpeg') }}" alt="Breadboard"
+                            class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://en.wikipedia.org/wiki/Breadboard" target="_blank">Wikipedia –
+                                    Breadboard</a></li>
+                            <li><a href="https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard/all"
+                                    target="_blank">SparkFun –
+                                    How to Use a Breadboard</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Bridge Rectifier Module -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Bridge-Rectifier-Module">Bridge Rectifier Module</h1>
+                        <h2>Definition</h2>
+                        <p>A bridge rectifier module contains four diodes arranged in a bridge configuration to convert
+                            AC
+                            to DC. It
+                            allows full-wave rectification, providing smoother DC output compared to single diodes. This
+                            module is
+                            commonly used in power supply circuits.</p>
+                        <h2>Function</h2>
+                        <p>Full-wave rectification.</p>
+                        <img src="{{ url_for('static', filename='images/materials/Bridge Rectifier Module.png') }}"
+                            alt="Bridge Rectifier Module" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.electronicsforu.com/technology-trends/learn-electronics/bridge-rectifier-circuit-construction-working-types"
+                                    target="_blank">Electronics For You – Bridge Rectifier</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- CAN Interface Module -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="CAN-Interface-Module">CAN Interface Module</h1>
+                        <h2>Definition</h2>
+                        <p>A module or interface unit that enables devices to communicate over a Controller Area Network
+                            (CAN) bus — a
+                            robust vehicle/industrial-grade serial bus standard for communicating between
+                            microcontrollers
+                            and devices
+                            without a host computer.</p>
+                        <h2>Function</h2>
+                        <p>Allows multiple devices (controllers, sensors, actuators, drives) to share the same CAN bus
+                            network enabling
+                            distributed communication, parameter/configuration exchange, control and diagnostics in
+                            real-time across the
+                            network.</p>
+                        <img src="{{ url_for('static', filename='images/materials/CAN Interface Module.png') }}"
+                            alt="CAN Interface Module" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://icpdas-europe.com/en/Products/Industrial-Communication"
+                                    target="_blank">ICP
+                                    DAS –
+                                    Industrial Communication</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Capacitor -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Capacitor">Capacitor</h1>
+                        <h2>Definition</h2>
+                        <p>An electronic component that stores and releases electrical energy rapidly.</p>
+                        <h2>Function</h2>
+                        <p>Used for filtering, smoothing voltage, timing circuits, and energy discharge.</p>
+                        <img src="{{ url_for('static', filename='images/materials/Capacitor.png') }}" alt="Capacitor"
+                            class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://en.wikipedia.org/wiki/Capacitor" target="_blank">Wikipedia –
+                                    Capacitor</a>
+                            </li>
+                            <li><a href="https://en.wikipedia.org/wiki/Capacitor_types" target="_blank">Wikipedia –
+                                    Capacitor Types</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Carbon Film Resistor -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Carbon-Film-Resistor">Carbon Film Resistor</h1>
+                        <h2>Definition</h2>
+                        <p>Carbon film resistors are made by depositing a thin layer of carbon on a ceramic substrate.
+                            They
+                            provide
+                            fixed resistance for general electronic applications. These resistors are inexpensive,
+                            reliable,
+                            and
+                            commonly used in voltage and current control.</p>
+                        <h2>Function</h2>
+                        <p>General-purpose resistance.</p>
+                        <img src="{{ url_for('static', filename='images/materials/Carbon Film Resistor.png') }}"
+                            alt="Carbon Film Resistor" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://eepower.com/resistor-guide/resistor-materials/carbon-film-resistor/"
+                                    target="_blank">EE
+                                    Power – Carbon Film Resistor</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <!-- Carbon Zinc Dry Cell Batteries -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Carbon-Zinc-Dry-Cell-Batteries">Carbon Zinc Dry Cell Batteries</h1>
+                        <h2>Definition</h2>
+                        <p>Primary batteries using zinc and carbon electrodes.</p>
+                        <h2>Function</h2>
+                        <p>Power small devices like flashlights and toys.</p>
+                        <img src="{{ url_for('static', filename='images/materials/Carbon Zinc Dry Cell Batteries.jpeg') }}"
+                            alt="Carbon Zinc Dry Cell Batteries" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.sciencedirect.com/topics/engineering/carbon-zinc-battery"
+                                    target="_blank">ScienceDirect – Carbon Zinc Battery</a></li>
+                            <li><a href="https://batteryuniversity.com/article/bu-106-standard-primary-batteries"
+                                    target="_blank">Battery University – Primary Batteries</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Chain -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Chain">Chain</h1>
+                        <h2>Definition</h2>
+                        <p>A series of linked metal segments used for mechanical power transmission.</p>
+                        <h2>Function</h2>
+                        <p>Transfers rotary motion between sprockets with minimal slip.</p>
+                        <img src="{{ url_for('static', filename='images/materials/Chain.jpeg') }}" alt="Chain"
+                            class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.sciencedirect.com/topics/engineering/chain-drive"
+                                    target="_blank">ScienceDirect –
+                                    Chain Drive</a></li>
+                            <li><a href="https://www.engineeringchoice.com/chain-drive/" target="_blank">Engineering
+                                    Choice
+                                    – Chain
+                                    Drive</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- CNC Machines -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="CNC-Machines">CNC Machines</h1>
+                        <h2>Definition</h2>
+                        <p>Computer-controlled machines that perform precise cutting, drilling, and shaping.</p>
+                        <h2>Function</h2>
+                        <p>Automates subtractive manufacturing for high accuracy and repeatability.</p>
+                        <img src="{{ url_for('static', filename='images/materials/CNC Machines.png') }}"
+                            alt="CNC Machines" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.sciencedirect.com/topics/engineering/cnc-machine"
+                                    target="_blank">ScienceDirect –
+                                    CNC Machine</a></li>
+                            <li><a href="https://www.britannica.com/technology/numerical-control"
+                                    target="_blank">Britannica
+                                    – Numerical
+                                    Control</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Coil -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Coil">Coil</h1>
+                        <h2>Definition</h2>
+                        <p>A conductor wound into loops that generates a magnetic field when current passes.</p>
+                        <h2>Function</h2>
+                        <p>Used in motors, inductors, relays, and transformers for electromagnetic effects.</p>
+                        <img src="{{ url_for('static', filename='images/materials/Coil.jpeg') }}" alt="Coil"
+                            class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.britannica.com/technology/coil" target="_blank">Britannica –
+                                    Coil</a>
+                            </li>
+                            <li><a href="https://en.wikipedia.org/wiki/Electromagnetic_coil" target="_blank">Wikipedia –
+                                    Electromagnetic
+                                    Coil</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Computer/Laptop -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Computer/Laptop">Computer/Laptop</h1>
+                        <h2>Definition</h2>
+                        <p>A digital device capable of running software and interfacing with electronics.</p>
+                        <h2>Function</h2>
+                        <p>Programs microcontrollers, monitors data, and analyzes experimental results.</p>
+                        <img src="{{ url_for('static', filename='images/materials/Computer_Laptop.png') }}"
+                            alt="Computer/Laptop" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://pcx.com.ph" target="_blank">PC Express – Laptops</a></li>
+                            <li><a href="https://en.wikipedia.org/wiki/Computer" target="_blank">Wikipedia –
+                                    Computer</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Control Relay -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Control-Relay">Control Relay</h1>
+                        <h2>Definition</h2>
+                        <p>A control relay is an electrically operated switch that uses a low-power input to control a
+                            high-power
+                            output. Relays allow circuits to operate devices indirectly and safely. They are widely used
+                            in
+                            automation
+                            and control applications.</p>
+                        <h2>Function</h2>
+                        <p>Controls high-power devices using low-power signals, enabling safe and indirect operation of
+                            machinery and
+                            circuits.</p>
+                        <img src="{{ url_for('static', filename='images/materials/Control Relay.png') }}"
+                            alt="Control Relay" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.electronics-tutorials.ws/io/io_5.html" target="_blank">Electronics
+                                    Tutorials –
+                                    Control Relay</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Control Valves -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Control-Valves">Control Valves</h1>
+                        <h2>Definition</h2>
+                        <p>Control Valves are defined as the final control elements in a system, meaning they are the
+                            devices that
+                            physically and directly manipulate the flow of energy or material.</p>
+                        <h2>Function</h2>
+                        <p>Adjust process parameters such as flow, pressure, level, or temperature based on the
+                            electronic
+                            or pneumatic
+                            control signal received from the main controller. They execute the necessary corrective
+                            action
+                            to keep the
+                            Process Variable (PV) at the Setpoint (SP).</p>
+                        <img src="{{ url_for('static', filename='images/materials/Control Valves.jpeg') }}"
+                            alt="Control Valves" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://share.google/FL9F3tyHSi6ytbbu7" target="_blank">Control Valve Function
+                                    and
+                                    Components</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Controllers -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Controllers">Controllers</h1>
+                        <h2>Definition</h2>
+                        <p>Controllers are devices that receive input signals from sensors and send output signals to
+                            actuators or final
+                            control elements to maintain desired process conditions.</p>
+                        <h2>Function</h2>
+                        <p>Provide closed-loop control by comparing process variables to setpoints and adjusting outputs
+                            accordingly.
+                        </p>
+                        <img src="{{ url_for('static', filename='images/materials/Controller.jpeg') }}"
+                            alt="Controllers" class="topic-image">
+                    </div>
+                </div>
+
+                <!-- Conveyor Systems -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Conveyor-Systems">Conveyor Systems</h1>
+                        <h2>Definition</h2>
+                        <p>Mechanical systems that transport materials or products along a fixed path.</p>
+                        <h2>Function</h2>
+                        <p>Improve efficiency in manufacturing and logistics by automating movement.</p>
+                        <img src="{{ url_for('static', filename='images/materials/Conveyor System.jpeg') }}"
+                            alt="Conveyor Systems" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.sciencedirect.com/topics/engineering/conveyor-system"
+                                    target="_blank">ScienceDirect
+                                    – Conveyor System</a></li>
+                            <li><a href="https://www.britannica.com/technology/conveyor" target="_blank">Britannica –
+                                    Conveyor</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Copper Bars -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Copper-Bars">Copper Bars</h1>
+                        <h2>Definition</h2>
+                        <p>Solid conductive bars made of copper, used in electrical distribution systems and busbars.
+                        </p>
+                        <h2>Function</h2>
+                        <p>Provide efficient conduction of electricity in high-current applications.</p>
+                        <img src="{{ url_for('static', filename='images/materials/Copper Bars.png') }}"
+                            alt="Copper Bars" class="topic-image">
+                    </div>
+                </div>
+
+                <!-- Copper Wire -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Copper-Wire">Copper Wire</h1>
+                        <h2>Definition</h2>
+                        <p>Conductive wire made of copper.</p>
+                        <h2>Function</h2>
+                        <p>Transmits electricity efficiently in circuits and power systems.</p>
+                        <img src="{{ url_for('static', filename='images/materials/CopperWire.jpeg') }}"
+                            alt="Copper Wire" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.sciencedirect.com/topics/engineering/copper-wire"
+                                    target="_blank">ScienceDirect –
+                                    Copper Wire</a></li>
+                            <li><a href="https://www.electrical4u.com/copper/" target="_blank">Electrical4U – Copper</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Coupling Shaft -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Coupling-Shaft">Coupling Shaft</h1>
+                        <h2>Definition</h2>
+                        <p>A mechanical part that connects the output shaft of the stepper motor to the driven load
+                            (gear,
+                            wheel,
+                            lead-screw, etc.), allowing torque transfer and alignment accommodation.</p>
+                        <h2>Function</h2>
+                        <p>Transfers the motor’s rotation/torque to the mechanical load; can compensate for slight
+                            misalignments between
+                            motor shaft and load shaft, reduce stress on bearings, and ensure smooth motion
+                            transmission.
+                        </p>
+                        <img src="{{ url_for('static', filename='images/materials/CouplingShaft.png') }}"
+                            alt="Coupling Shaft" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.pulsemotor.com/global/Engineering/What_is_stepper_motor.html?"
+                                    target="_blank">Pulse Motor – Stepper Motor Coupling</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- CPU Module (processor) -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="CPU-Module-(processor)">CPU Module (processor)</h1>
+                        <h2>Definition</h2>
+                        <p>A CPU module is the central processing unit board used in embedded or industrial systems to
+                            execute
+                            instructions and manage operations.</p>
+                        <h2>Function</h2>
+                        <p>Provides computational power and control logic for automation systems.</p>
+                        <img src="{{ url_for('static', filename='images/materials/CPU-Module.jpeg') }}" alt="CPU Module"
+                            class="topic-image">
+                    </div>
+                </div>
+
+
+                <!-- DHT11 Sensor -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="DHT11-Sensor">DHT11 Sensor</h1>
+                        <h2>Definition</h2>
+                        <p>A basic temperature and humidity sensor.</p>
+                        <h2>Function</h2>
+                        <p>Measures environmental conditions for automation or monitoring systems.</p>
+                        <img src="{{ url_for('static', filename='images/materials/DHT11 Sensor.jpeg') }}"
+                            alt="DHT11 Sensor" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://components101.com/dht11-temperature-and-humidity-sensor"
+                                    target="_blank">Components101
+                                    – DHT11 Sensor</a></li>
+                            <li><a href="https://www.mouser.com/pdfdocs/DHT11-Humidity-Temperature-Sensor.pdf"
+                                    target="_blank">Mouser –
+                                    DHT11 Datasheet</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Digital Input Module -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Digital-Input-Module">Digital Input Module</h1>
+                        <h2>Definition</h2>
+                        <p>Digital input modules are used to monitor the state of discrete field devices.</p>
+                        <h2>Function</h2>
+                        <p>Accepts discrete signals (e.g., button ON/OFF).</p>
+                        <img src="{{ url_for('static', filename='images/materials/Digital-Input-Module.jpeg') }}"
+                            alt="Digital Input Module" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.se.com/ph/en/product/SXWDI16XX10001/di16-module-16-digital-inputs/"
+                                    target="_blank">Schneider Electric – Digital Input Module</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Digital Ohmmeter -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Digital-Ohmmeter">Digital Ohmmeter</h1>
+                        <h2>Definition</h2>
+                        <p>A digital ohmmeter is a device that measures resistance electronically and displays the
+                            result on
+                            a digital
+                            screen. It is more precise than analog meters and allows easy testing of resistors and
+                            circuit
+                            connections.
+                            Digital ohmmeters are widely used in electronics troubleshooting.</p>
+                        <h2>Function</h2>
+                        <p>Tests resistor values and troubleshooting.</p>
+                        <img src="{{ url_for('static', filename='images/materials/Digital-Ohmmeter.jpeg') }}"
+                            alt="Digital Ohmmeter" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.fluke.com/en-us/learn/blog/digital-multimeters/how-to-measure-resistance"
+                                    target="_blank">Fluke – How to Measure Resistance</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Digital Output Module -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Digital-Output-Module-(relay,-transistor,-triac)">Digital Output Module (relay,
+                            transistor, triac)</h1>
+                        <h2>Definition</h2>
+                        <p>A digital output module is an interface that sends a binary, on-or-off signal from a control
+                            system, like a
+                            PLC, to external devices.</p>
+                        <h2>Function</h2>
+                        <p>Relay type: mechanical switching<br>Transistor type: fast switching, DC loads<br>Triac type:
+                            AC
+                            loads</p>
+                        <img src="{{ url_for('static', filename='images/materials/DigitalOutputModule.jpeg') }}"
+                            alt="Digital Output Module" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.se.com/ph/en/product/SXWDO16XX10001/do16-module-16-digital-outputs/"
+                                    target="_blank">Schneider Electric – Digital Output Module</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Double Solenoid 5/2 Valve -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Double-Solenoid-5/2-Valve">Double Solenoid 5/2 Valve</h1>
+                        <h2>Definition</h2>
+                        <p>A double solenoid 5/2 valve is a pneumatic valve with two solenoids, five ports, and two
+                            positions. It
+                            controls the direction of airflow to actuate cylinders in both directions. These valves are
+                            used
+                            in
+                            industrial automation to control pneumatic actuators.</p>
+                        <h2>Function</h2>
+                        <p>Controls pneumatic cylinder movement in both directions.</p>
+                        <img src="{{ url_for('static', filename='images/materials/Double Solenoid 5_2.png') }}"
+                            alt="Double Solenoid 5/2 Valve" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://tameson.com/pages/52-way-and-42-way-pneumatic-valve"
+                                    target="_blank">Tameson –
+                                    Pneumatic Valves</a></li>
+                            <li><a href="https://www.aox-actuator.com/product/aox-p-series-air-operated-actuator/"
+                                    target="_blank">AOX
+                                    Actuator – Pneumatic Solenoid Valve</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Electro Pneumatic Converters -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Electro-Pneumatic-Converters">Electro Pneumatic Converters</h1>
+                        <h2>Definition</h2>
+                        <p>An Electro-Pneumatic Converter (or I/P/V/P converter) is defined as an auxiliary device that
+                            converts an
+                            electrical control signal (typically 4–20 mA or 0–10 V) into a corresponding pneumatic
+                            pressure
+                            signal.</p>
+                        <h2>Function</h2>
+                        <p>Bridges the gap between modern electronic controllers and older or heavy-duty pneumatic
+                            actuators
+                            and valves,
+                            allowing the electronically generated signal to effectively control the air-powered
+                            mechanism.
+                        </p>
+                        <img src="{{ url_for('static', filename='images/materials/electropneumaticconverter.png') }}"
+                            alt="Electro Pneumatic Converters" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://ph.rs-online.com/web/c/pneumatics-hydraulics/pneumatic-air-preparation/ip-ep-converters/"
+                                    target="_blank">RS Online – I/P Converters</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Electrolytes -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Electrolytes">Electrolytes</h1>
+                        <h2>Definition</h2>
+                        <p>Substances that produce ions when dissolved, enabling conductivity.</p>
+                        <h2>Function</h2>
+                        <p>Essential in batteries, electrolysis, and biological systems.</p>
+                        <img src="{{ url_for('static', filename='images/materials/Electrolytes.png') }}"
+                            alt="Electrolytes" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.britannica.com/science/electrolyte" target="_blank">Britannica –
+                                    Electrolyte</a>
+                            </li>
+                            <li><a href="https://www.sciencedirect.com/topics/chemistry/electrolyte"
+                                    target="_blank">ScienceDirect –
+                                    Electrolyte</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Electrical Terminal Block -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Electrical-Terminal-Block">Electrical Terminal Block</h1>
+                        <h2>Definition</h2>
+                        <p>An electrical terminal block is a device that securely connects two or more wires together.
+                            It
+                            provides
+                            organized, safe, and reliable connections in electrical circuits. Terminal blocks are used
+                            extensively in
+                            control panels and wiring systems.</p>
+                        <h2>Function</h2>
+                        <p>Provides safe and organized electrical connections.</p>
+                        <img src="{{ url_for('static', filename='images/materials/Terminal-Block.png') }}"
+                            alt="Electrical Terminal Block" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.arrow.com/en/research-and-events/articles/connectors-basics-of-terminal-blocks-and-types"
+                                    target="_blank">Arrow – Terminal Blocks</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Electronic Timer -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Electronic-Timer">Electronic Timer</h1>
+                        <h2>Definition</h2>
+                        <p>A device that produces timed control signals for relays, solenoids, and circuits.</p>
+                        <h2>Function</h2>
+                        <p>Provides ON-delay or OFF-delay for pneumatic control.</p>
+                        <img src="{{ url_for('static', filename='images/materials/electronic-timer.jpg') }}"
+                            alt="Electronic Timer" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.gicindia.com/products/timers/electronic-timer/electronic-timer-series-micon-175/"
+                                    target="_blank">GIC India – Electronic Timer</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Emergency Stop Switches -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Emergency-Stop-Switches">Emergency Stop Switches</h1>
+                        <h2>Definition</h2>
+                        <p>An emergency stop button (E-Stop) is a fail-safe switch that quickly stops machinery in case
+                            of
+                            injury risk
+                            or workflow needs, providing a means to shut down.</p>
+                        <h2>Function</h2>
+                        <p>Immediately removes power. Large, red, latching type.</p>
+                        <img src="{{ url_for('static', filename='images/materials/emergency.jpg') }}"
+                            alt="Emergency Stop Switches" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://ph.rs-online.com/web/c/switches/push-button-switches-components/emergency-stop-push-buttons/"
+                                    target="_blank">RS Online – Emergency Stop Buttons</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Ethernet Switch -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Ethernet-Switch">Ethernet Switch</h1>
+                        <h2>Definition</h2>
+                        <p>A network device that connects multiple Ethernet-based devices (controllers, PCs, routers,
+                            gateways) allowing
+                            them to communicate over a local area network (LAN), often with industrial-grade robustness.
+                        </p>
+                        <h2>Function</h2>
+                        <p>Acts as a transport hub in an industrial network, forwarding data packets between devices,
+                            facilitating
+                            communication traffic, enabling network expansion and device interconnection.</p>
+                        <img src="{{ url_for('static', filename='images/materials/ethernetswitch.png') }}"
+                            alt="Ethernet Switch" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.pusr.com/blog/RS485-ethernet-converter-vs-Industrial-Switch?"
+                                    target="_blank">PUSR
+                                    – RS485 vs Industrial Switch</a></li>
+                            <li><a href="https://www.pusr.com/blog/RS485-ethernet-converter-vs-Industrial-Switch"
+                                    target="_blank">PUSR –
+                                    Industrial Ethernet Switch</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Feedback Encoder -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Feedback-Encoder">Feedback Encoder</h1>
+                        <h2>Definition</h2>
+                        <p>A sensor attached to the servo motor (or its shaft) that measures actual shaft position and
+                            sometimes speed,
+                            sending that feedback signal to the controller.</p>
+                        <h2>Function</h2>
+                        <p>Provides real‑time data of motor output (position/speed) for the controller; enables
+                            closed‑loop
+                            control so
+                            the system can compare actual vs desired output and correct errors, ensuring precise,
+                            accurate
+                            motion.</p>
+                        <img src="{{ url_for('static', filename='images/materials/feedbackencoder.png') }}"
+                            alt="Feedback Encoder" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.galil.com/news/motion-controllers/servo-motor-controller-basics"
+                                    target="_blank">Galil – Servo Motor Controller Basics</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Fieldbus Cable -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Fieldbus-Cable">Fieldbus Cable</h1>
+                        <h2>Definition</h2>
+                        <p>Cable used to connect industrial devices on a “fieldbus” — a network of sensors, actuators,
+                            controllers, and
+                            I/O modules under protocols defined for industrial communication (as opposed to
+                            point-to-point
+                            wiring).</p>
+                        <h2>Function</h2>
+                        <p>Enables real-time, distributed control by linking multiple field devices over a single
+                            network.
+                            Reduces
+                            wiring complexity and allows many sensors/actuators to communicate via a common bus instead
+                            of
+                            individual
+                            wiring, suitable for automation systems.</p>
+                        <img src="{{ url_for('static', filename='images/materials/fieldbus-cable.png') }}"
+                            alt="Fieldbus Cable" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://en.wikipedia.org/wiki/Fieldbus" target="_blank">Wikipedia –
+                                    Fieldbus</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Flow Control Pumps -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Flow-Control-Pumps">Flow Control Pumps</h1>
+                        <h2>Definition</h2>
+                        <p>Flow Control Pumps or Actuators are devices used in processes involving fluid transport where
+                            fluid movement
+                            needs to be actively regulated.</p>
+                        <h2>Function</h2>
+                        <p>Flow rate or output is manipulated by controller signals to directly control process
+                            variables
+                            like system
+                            flow rate, pressure, or level.</p>
+                        <img src="{{ url_for('static', filename='images/materials/flow-control-pumps.png') }}"
+                            alt="Flow Control Pumps" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.flowserve.com/" target="_blank">Flowserve – Flow Control
+                                    Solutions</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Flowchart Diagramming Tool -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Flowchart-Diagramming-Tool">Flowchart Diagramming Tool</h1>
+                        <h2>Definition</h2>
+                        <p>Software used to design process or system flow diagrams.</p>
+                        <h2>Function</h2>
+                        <p>Helps visualize control logic and system operations for mechatronic projects.</p>
+                        <img src="{{ url_for('static', filename='images/materials/flowchart.png') }}"
+                            alt="Flowchart Diagramming Tool" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://en.wikipedia.org/wiki/Flowchart" target="_blank">Wikipedia –
+                                    Flowchart</a>
+                            </li>
+                            <li><a href="https://www.lucidchart.com/pages/what-is-a-flowchart"
+                                    target="_blank">Lucidchart –
+                                    What is a
+                                    Flowchart</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Forklifts -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Forklifts">Forklifts</h1>
+                        <h2>Definition</h2>
+                        <p>Industrial vehicles used to lift and transport heavy loads.</p>
+                        <h2>Function</h2>
+                        <p>Essential for warehouse operations and material handling.</p>
+                        <img src="{{ url_for('static', filename='images/materials/forklifts.png') }}" alt="Forklifts"
+                            class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.britannica.com/technology/forklift-truck"
+                                    target="_blank">Britannica –
+                                    Forklift
+                                    Truck</a></li>
+                            <li><a href="https://www.sciencedirect.com/topics/engineering/forklift"
+                                    target="_blank">ScienceDirect –
+                                    Forklift</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Fossil Fuels -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Fossil-Fuels">Fossil Fuels</h1>
+                        <h2>Definition</h2>
+                        <p>Natural fuels formed from ancient organic matter (coal, oil, natural gas).</p>
+                        <h2>Function</h2>
+                        <p>Major source of energy for electricity, heating, and transportation.</p>
+                        <img src="{{ url_for('static', filename='images/materials/fossil-fuels.png') }}"
+                            alt="Fossil Fuels" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.nationalgeographic.org/encyclopedia/fossil-fuels/"
+                                    target="_blank">National
+                                    Geographic – Fossil Fuels</a></li>
+                            <li><a href="https://www.britannica.com/science/fossil-fuel" target="_blank">Britannica –
+                                    Fossil
+                                    Fuel</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Full Joint -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Full-Joint">Full Joint</h1>
+                        <h2>Definition</h2>
+                        <p>A kinematic connection allowing complete relative motion between two links.</p>
+                        <h2>Function</h2>
+                        <p>Provides full constraint in mechanisms, ensuring precise motion transfer.</p>
+                        <img src="{{ url_for('static', filename='images/materials/full-joint.png') }}" alt="Full Joint"
+                            class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.sciencedirect.com/topics/engineering/kinematics"
+                                    target="_blank">ScienceDirect –
+                                    Kinematics</a></li>
+                            <li><a href="https://www.mechanicalc.com/kinematics-of-machinery/"
+                                    target="_blank">MechanicalC –
+                                    Kinematics
+                                    of Machinery</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Generator -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Generator">Generator</h1>
+                        <h2>Definition</h2>
+                        <p>A machine that converts mechanical energy into electrical energy.</p>
+                        <h2>Function</h2>
+                        <p>Supplies electricity to circuits or devices for testing and operations.</p>
+                        <img src="{{ url_for('static', filename='images/materials/generator.png') }}" alt="Generator"
+                            class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://en.wikipedia.org/wiki/Electric_generator" target="_blank">Wikipedia –
+                                    Electric
+                                    Generator</a></li>
+                            <li><a href="https://www.britannica.com/technology/electric-generator"
+                                    target="_blank">Britannica – Electric
+                                    Generator</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Grinder -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Grinder">Grinder</h1>
+                        <h2>Definition</h2>
+                        <p>A machine tool used for grinding, cutting, or finishing materials.</p>
+                        <h2>Function</h2>
+                        <p>Provides precision surface finishing and material removal.</p>
+                        <img src="{{ url_for('static', filename='images/materials/grinder.png') }}" alt="Grinder"
+                            class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.sciencedirect.com/topics/engineering/grinding-machine"
+                                    target="_blank">ScienceDirect – Grinding Machine</a></li>
+                            <li><a href="https://www.britannica.com/technology/grinding" target="_blank">Britannica –
+                                    Grinding</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Green LED -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Green-LED">Green LED</h1>
+                        <h2>Definition</h2>
+                        <p>Green LEDs emit light in the 495–570 nm wavelength range. They are commonly used for status
+                            indicators and
+                            signaling in electronic devices. Green LEDs provide clear visibility and are
+                            energy-efficient.
+                        </p>
+                        <h2>Function</h2>
+                        <p>Status indicator, signal.</p>
+                        <img src="{{ url_for('static', filename='images/materials/green-led.png') }}" alt="Green LED"
+                            class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://docs.cirkitdesigner.com/component/9d955150-d3c9-4f4d-98c1-8c93fe8c7e51/green-led"
+                                    target="_blank">Cirkit Designer – Green LED</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Hot-Wire Ammeter -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Hot-Wire-Ammeter">Hot-Wire Ammeter</h1>
+                        <h2>Definition</h2>
+                        <p>An instrument measuring current by detecting wire expansion due to heat.</p>
+                        <h2>Function</h2>
+                        <p>Measures AC and DC currents, especially at high frequencies.</p>
+                        <img src="{{ url_for('static', filename='images/materials/hot-wire.png') }}"
+                            alt="Hot-Wire Ammeter" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://spark.iop.org/a-model-hot-wire-ammeter" target="_blank">IOPSpark –
+                                    Hot-Wire
+                                    Ammeter</a>
+                            </li>
+                            <li><a href="https://www.scribd.com/document/Hot-Wire-Ammeter" target="_blank">Scribd –
+                                    Hot-Wire
+                                    Ammeter
+                                    PDF</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Hydraulic Turbines -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Hydraulic-Turbines">Hydraulic Turbines</h1>
+                        <h2>Definition</h2>
+                        <p>Machines that convert water flow energy into mechanical energy.</p>
+                        <h2>Function</h2>
+                        <p>Used in hydroelectric power plants to generate electricity.</p>
+                        <img src="{{ url_for('static', filename='images/materials/hydraulic-turbines.png') }}"
+                            alt="Hydraulic Turbines" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.energy.gov/eere/water/types-hydropower-turbines"
+                                    target="_blank">Energy.gov –
+                                    Hydropower Turbines</a></li>
+                            <li><a href="https://www.sciencedirect.com/topics/engineering/hydraulic-turbine"
+                                    target="_blank">ScienceDirect – Hydraulic Turbine</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Inductive Proximity Sensor -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Inductive-Proximity-Sensor">Inductive Proximity Sensor</h1>
+                        <h2>Definition</h2>
+                        <p>A sensor that detects metal objects using magnetic fields.</p>
+                        <h2>Function</h2>
+                        <p>Used in automation for position, counting, and object detection.</p>
+                        <img src="{{ url_for('static', filename='images/materials/proximity-sensor-inductive.png') }}"
+                            alt="Inductive Proximity Sensor" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.realpars.com/blog/proximity-sensor-datasheet"
+                                    target="_blank">RealPars
+                                    – Proximity
+                                    Sensor Datasheet</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Indicators/Gauges -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Indicators/Gauges">Indicators/Gauges</h1>
+                        <h2>Definition</h2>
+                        <p>Devices that visually display measurements such as pressure, temperature, or speed in
+                            mechanical
+                            and
+                            electrical systems.</p>
+                        <h2>Function</h2>
+                        <p>Provide real-time monitoring of system parameters to ensure safe and efficient operation.</p>
+                        <img src="{{ url_for('static', filename='images/materials/indicators.png') }}"
+                            alt="Indicators/Gauges" class="topic-image">
+                    </div>
+                </div>
+
+                <!-- Industrial Router -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Industrial-Router">Industrial Router</h1>
+                        <h2>Definition</h2>
+                        <p>A routing device designed for industrial environments that connects different network
+                            segments
+                            (e.g. Ethernet
+                            LAN, fieldbus, serial networks), possibly including wired/wireless, and often hardy to
+                            withstand
+                            industrial
+                            conditions (temperature, electrical noise, surge).</p>
+                        <h2>Function</h2>
+                        <p>Facilitates communication between different network types, enables remote access, data
+                            routing,
+                            bridging
+                            dissimilar networks, and integration of devices/systems across a facility, often forming the
+                            backbone of
+                            industrial network architecture or IoT-ready systems.</p>
+                        <img src="{{ url_for('static', filename='images/materials/industrial-router.png') }}"
+                            alt="Industrial Router" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.eselo.lv/media/2021/Vebinari/weidmeuller_vebinars_10.03.2021._industrial_ethernet.pdf"
+                                    target="_blank">Weidmueller – Industrial Ethernet Webinar</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Jumper Wire -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Jumper-Wire">Jumper Wire</h1>
+                        <h2>Definition</h2>
+                        <p>Short insulated wires for connecting two points in a circuit.</p>
+                        <h2>Function</h2>
+                        <p>Used for prototyping and testing circuit connections.</p>
+                        <img src="{{ url_for('static', filename='images/materials/jumper-wire.png') }}"
+                            alt="Jumper Wire" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://en.wikipedia.org/wiki/Jump_wire" target="_blank">Wikipedia – Jump
+                                    Wire</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Lead-Acid Batteries -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Lead-Acid-Batteries">Lead-Acid Batteries</h1>
+                        <h2>Definition</h2>
+                        <p>Rechargeable batteries using lead and sulfuric acid.</p>
+                        <h2>Function</h2>
+                        <p>Common in vehicles, backup power, and industrial applications.</p>
+                        <img src="{{ url_for('static', filename='images/materials/lead-acid.png') }}"
+                            alt="Lead-Acid Batteries" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.sciencedirect.com/topics/engineering/lead-acid-battery"
+                                    target="_blank">ScienceDirect – Lead-Acid Battery</a></li>
+                            <li><a href="https://batteryuniversity.com/article/bu-201-lead-based-batteries"
+                                    target="_blank">Battery
+                                    University – Lead-Based Batteries</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- LED Holder -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="LED-Holder">LED Holder</h1>
+                        <h2>Definition</h2>
+                        <p>An LED holder is a small socket or clip used to securely mount LEDs. It protects the LED
+                            leads
+                            and allows for
+                            easy replacement without soldering. LED holders are commonly used in prototyping or panel
+                            displays.</p>
+                        <h2>Function</h2>
+                        <p>Protects leads and allows easy replacement.</p>
+                        <img src="{{ url_for('static', filename='images/materials/led-holder.png') }}" alt="LED Holder"
+                            class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.digikey.com/en/product-highlight/t/te-connectivity-amp/lumawise-led-holders-type-z"
+                                    target="_blank">DigiKey – LED Holders</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- LEDs -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="LEDs">LEDs</h1>
+                        <h2>Definition</h2>
+                        <p>Light-emitting diodes that emit light when current flows.</p>
+                        <h2>Function</h2>
+                        <p>Indicate circuit status or serve as display elements in systems.</p>
+                        <img src="{{ url_for('static', filename='images/materials/leds-light.png') }}" alt="LEDs"
+                            class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://en.wikipedia.org/wiki/Light-emitting_diode" target="_blank">Wikipedia –
+                                    Light Emitting
+                                    Diode</a></li>
+                            <li><a href="https://www.energy.gov/energysaver/led-lighting" target="_blank">Energy.gov –
+                                    LED
+                                    Lighting</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Light Emitting Diode (LED) -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Light-Emitting-Diode-(LED)">Light Emitting Diode (LED)</h1>
+                        <h2>Definition</h2>
+                        <p>LEDs are semiconductor devices that emit light when current flows through them in forward
+                            bias.
+                            They are
+                            energy-efficient, long-lasting, and used for indicators, displays, and lighting. LEDs come
+                            in
+                            different
+                            colors depending on the semiconductor material.</p>
+                        <h2>Function</h2>
+                        <p>Indicators, displays, lighting.</p>
+                        <img src="{{ url_for('static', filename='images/materials/leds-light.png') }}"
+                            alt="Light Emitting Diode (LED)" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.electronics-tutorials.ws/de/zahler/led-blinklicht.html"
+                                    target="_blank">Electronics
+                                    Tutorials – LED Blinklicht</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Limit Switch Sensor -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Limit-Switch-Sensor">Limit Switch Sensor</h1>
+                        <h2>Definition</h2>
+                        <p>A mechanical switch that detects physical movement when an actuator reaches a position.</p>
+                        <h2>Function</h2>
+                        <p>Gives positional feedback to timers or relays.</p>
+                        <img src="{{ url_for('static', filename='images/materials/limit-switch.png') }}"
+                            alt="Limit Switch Sensor" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.eaton.com/us/en-us/products/controls-drives-automation-sensors/sensors---limit-switches/understanding-sensors-and-limit-switches--.html"
+                                    target="_blank">Eaton – Limit Switches</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Limit Switches -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Limit-Switches">Limit Switches</h1>
+                        <h2>Definition</h2>
+                        <p>In electrical engineering, a limit switch is a switch operated by the motion of a machine
+                            part or
+                            the
+                            presence of an object.</p>
+                        <h2>Function</h2>
+                        <p>Detect mechanical movement or position. Activated by machine contact.</p>
+                        <img src="{{ url_for('static', filename='images/materials/limit-switches.png') }}"
+                            alt="Limit Switches" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://en.wikipedia.org/wiki/Limit_switch" target="_blank">Wikipedia – Limit
+                                    Switch</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Lithium Batteries -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Lithium-Batteries">Lithium Batteries</h1>
+                        <h2>Definition</h2>
+                        <p>Batteries using lithium compounds as electrodes.</p>
+                        <h2>Function</h2>
+                        <p>Lightweight, high-energy storage for electronics, EVs, and renewable systems.</p>
+                        <img src="{{ url_for('static', filename='images/materials/lithium-batteries.png') }}"
+                            alt="Lithium Batteries" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.energy.gov/eere/vehicles/articles/lithium-ion-batteries"
+                                    target="_blank">Energy.gov
+                                    – Lithium-Ion Batteries</a></li>
+                            <li><a href="https://www.sciencedirect.com/topics/engineering/lithium-battery"
+                                    target="_blank">ScienceDirect
+                                    – Lithium Battery</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Machine -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Machine">Machine</h1>
+                        <h2>Definition</h2>
+                        <p>A device that uses energy to perform work through mechanical action.</p>
+                        <h2>Function</h2>
+                        <p>Converts input energy into useful motion or force.</p>
+                        <img src="{{ url_for('static', filename='images/materials/machine.jpg') }}" alt="Machine"
+                            class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.britannica.com/technology/machine" target="_blank">Britannica –
+                                    Machine</a></li>
+                            <li><a href="https://www.sciencedirect.com/topics/engineering/machine"
+                                    target="_blank">ScienceDirect –
+                                    Machine</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Magnets -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Magnets">Magnets</h1>
+                        <h2>Definition</h2>
+                        <p>Materials that produce a magnetic field.</p>
+                        <h2>Function</h2>
+                        <p>Used in motors, generators, sensors, and data storage.</p>
+                        <img src="{{ url_for('static', filename='images/materials/magnets.jpg') }}" alt="Magnets"
+                            class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.khanacademy.org/science/physics/magnetic-forces-and-fields"
+                                    target="_blank">Khan
+                                    Academy – Magnetic Fields</a></li>
+                            <li><a href="https://www.britannica.com/science/magnet" target="_blank">Britannica –
+                                    Magnet</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Manual -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Manual">Manual</h1>
+                        <h2>Definition</h2>
+                        <p>The valve is operated directly by a human using lever, push button, or other manual device to
+                            shift the valve
+                            spool or change flow paths. Useful for simple or occasionally operated systems.</p>
+                        <h2>Function</h2>
+                        <p>Operated directly by a human to start, stop, or change fluid flow in a system.</p>
+                        <img src="{{ url_for('static', filename='images/materials/manual.jpg') }}" alt="Manual"
+                            class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://instrumentationtools.com/directional-control-valves-working-principle/"
+                                    target="_blank">Instrumentation Tools – Directional Control Valves</a></li>
+                            <li><a href="https://www.festo.com/gb/en/e/about-festo/blog/in-practice/pneumatic-valves-id_1517691/"
+                                    target="_blank">Festo – Pneumatic Valves</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Microcontroller Demo Board -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Microcontroller-Demo-Board">Microcontroller Demo Board</h1>
+                        <h2>Definition</h2>
+                        <p>A small board containing a microcontroller for experimentation.</p>
+                        <h2>Function</h2>
+                        <p>Demonstrates programming, interfacing, and embedded system concepts.</p>
+                        <img src="{{ url_for('static', filename='images/materials/microcontroller-demo-board.png') }}"
+                            alt="Microcontroller Demo Board" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.microchip.com" target="_blank">Microchip Technology – MCU
+                                    Boards</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Motor Driver Module (L298N) -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Motor-Driver-Module-(L298N)">Motor Driver Module (L298N)</h1>
+                        <h2>Definition</h2>
+                        <p>A circuit module that controls DC or stepper motors.</p>
+                        <h2>Function</h2>
+                        <p>Allows microcontrollers to safely control high-current motors.</p>
+                        <img src="{{ url_for('static', filename='images/materials/motor-driver-module.jpg') }}"
+                            alt="Motor Driver Module (L298N)" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://components101.com/l298n-motor-driver-module-pinout-datasheet-features-specs"
+                                    target="_blank">Components101 – L298N Motor Driver</a></li>
+                            <li><a href="https://www.handsontec.com/pdf/L298N%20Dual%20H-Bridge%20Motor%20Driver.pdf"
+                                    target="_blank">HandsOn Tech – L298N Datasheet</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Multimeter -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Multimeter">Multimeter</h1>
+                        <h2>Definition</h2>
+                        <p>A multimeter is a measuring instrument capable of measuring voltage, current, and resistance.
+                            It
+                            can be
+                            analog or digital, and is essential for testing and troubleshooting electronic circuits.</p>
+                        <h2>Function</h2>
+                        <p>Tests circuit components and troubleshooting.</p>
+                        <img src="{{ url_for('static', filename='images/materials/multimeter.jpg') }}" alt="Multimeter"
+                            class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://learn.sparkfun.com/tutorials/how-to-use-a-multimeter/all"
+                                    target="_blank">SparkFun –
+                                    How to Use a Multimeter</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Oscilloscope -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Oscilloscope">Oscilloscope</h1>
+                        <h2>Definition</h2>
+                        <p>An electronic instrument for viewing voltage waveforms over time.</p>
+                        <h2>Function</h2>
+                        <p>Diagnoses circuit behavior, timing, and signal characteristics.</p>
+                        <img src="{{ url_for('static', filename='images/materials/oscilloscope.jpg') }}"
+                            alt="Oscilloscope" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://learn.sparkfun.com/tutorials/how-to-use-an-oscilloscope"
+                                    target="_blank">SparkFun – How
+                                    to Use an Oscilloscope</a></li>
+                            <li><a href="https://www.tiepie.com/oscilloscope" target="_blank">TiePie – Oscilloscope with
+                                    AWG</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Pneumatic Cylinder -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Pneumatic-Cylinder">Pneumatic Cylinder</h1>
+                        <h2>Definition</h2>
+                        <p>A mechanical device that converts compressed air into linear motion.</p>
+                        <h2>Function</h2>
+                        <p>Creates extension and retraction movements needed in automation.</p>
+                        <img src="{{ url_for('static', filename='images/materials/pneumatic-cylinder.png') }}"
+                            alt="Pneumatic Cylinder" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://tameson.com/pages/pneumatic-cylinders" target="_blank">Tameson –
+                                    Pneumatic
+                                    Cylinders</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Positioners for Valves and Dampers -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Positioners-for-Valves-and-Dampers">Positioners for Valves and Dampers</h1>
+                        <h2>Definition</h2>
+                        <p>Positioners are auxiliary devices attached directly to control valves or dampers.</p>
+                        <h2>Function</h2>
+                        <p>Ensure the actuator achieves the accurate physical position corresponding to the controller's
+                            output signal,
+                            acting as a local feedback loop.</p>
+                        <img src="{{ url_for('static', filename='images/materials/positioners-for-valves-and-dampers.png') }}"
+                            alt="Positioners for Valves and Dampers" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://control.com/textbook/control-valves/valve-positioners/"
+                                    target="_blank">Control.com –
+                                    Valve Positioners</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Potentiometer -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Potentiometer">Potentiometer</h1>
+                        <h2>Definition</h2>
+                        <p>A potentiometer is an adjustable resistor used to vary resistance in a circuit. It is often
+                            used
+                            to control
+                            voltage, current, brightness, or volume levels. Potentiometers allow fine-tuning of circuit
+                            performance.</p>
+                        <h2>Function</h2>
+                        <p>Controls voltage, current, or signal levels.</p>
+                        <img src="{{ url_for('static', filename='images/materials/potentiometer.png') }}"
+                            alt="Potentiometer" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.electronics-tutorials.ws/resistor/potentiometer.html"
+                                    target="_blank">Electronics
+                                    Tutorials – Potentiometer</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Potentiometers -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Potentiometers">Potentiometers</h1>
+                        <h2>Definition</h2>
+                        <p>A variable resistor used to adjust voltage or current.</p>
+                        <h2>Function</h2>
+                        <p>Calibrates sensors, sets voltage references, or controls motor speed.</p>
+                        <img src="{{ url_for('static', filename='images/materials/potentiometer.png') }}"
+                            alt="Potentiometers" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://en.wikipedia.org/wiki/Potentiometer" target="_blank">Wikipedia –
+                                    Potentiometer</a></li>
+                            <li><a href="https://eepower.com/resistor-guide/resistor-types/potentiometer/"
+                                    target="_blank">EE Power –
+                                    Potentiometer Guide</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Power Adapter -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Power-Adapter">Power Adapter</h1>
+                        <h2>Definition</h2>
+                        <p>A device or module that provides the required electrical power (voltage/current) to the servo
+                            controller and
+                            servo motor converting from the source (e.g. mains AC or DC battery) to the needed form
+                            (e.g. DC
+                            voltages,
+                            proper phase, regulated supply).</p>
+                        <h2>Function</h2>
+                        <p>Supplies stable and correct electrical power to servo system components.</p>
+                        <img src="{{ url_for('static', filename='images/materials/power-adapter.png') }}"
+                            alt="Power Adapter" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://intech-group.vn/what-is-a-servo-motor-the-role-of-servo-controllers-in-industrial-automation-bv1384.htm"
+                                    target="_blank">Intech Group – Servo Motor & Controllers</a></li>
+                            <li><a href="https://servodynamics.com.vn/what-is-a-servo-motor-types-components-and-how-it-works/"
+                                    target="_blank">Servo Dynamics – Servo Motor Basics</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Power Supply Module -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Power-Supply-Module-(24V-DC,-120/240V-AC)">Power Supply Module (24V DC, 120/240V AC)
+                        </h1>
+                        <h2>Definition</h2>
+                        <p>Integrates the PWM controller, power MOSFETs, inductor and compensation network into the
+                            package.
+                        </p>
+                        <h2>Function</h2>
+                        <p>Converts 120/240V AC or 24V DC into regulated DC. Powers CPU and I/O modules.</p>
+                        <img src="{{ url_for('static', filename='images/materials/power-supply-module.png') }}"
+                            alt="Power Supply Module" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.se.com/ph/en/product/140CPS11100/power-supply-module-modicon-quantum-120-230-v-ac-standalone/"
+                                    target="_blank">Schneider Electric – Power Supply Module</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Power Supply Unit -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Power-Supply-Unit">Power Supply Unit</h1>
+                        <h2>Definition</h2>
+                        <p>A regulated electrical supply (voltage/current source) that provides the required energy for
+                            the
+                            stepper
+                            driver module and stepper motor.</p>
+                        <h2>Function</h2>
+                        <p>Supplies stable, sufficient power to the stepper system; ensures the motor windings receive
+                            correct
+                            voltage/current to produce torque.</p>
+                        <img src="{{ url_for('static', filename='images/materials/power-supply-unit.jpg') }}"
+                            alt="Power Supply Unit" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.electrical4u.com/stepper-motor-drive/" target="_blank">Electrical4U
+                                    –
+                                    Stepper Motor
+                                    Drive</a></li>
+                            <li><a href="https://www.elprocus.com/what-is-a-stepper-motor-driver-types-and-its-applications/"
+                                    target="_blank">Elprocus – Stepper Motor Driver</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Pressure Compensation -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Pressure-Compensation">Pressure Compensation</h1>
+                        <h2>Definition</h2>
+                        <p>Adjusting or controlling pressure so that changes in system demand or load do not cause
+                            pressure
+                            to exceed or
+                            drop below certain values.</p>
+                        <h2>Function</h2>
+                        <p>Keeps parts of the circuit at a consistent pressure even when conditions change, ensuring
+                            safety
+                            and precise
+                            control.</p>
+                        <img src="{{ url_for('static', filename='images/materials/pressure-compensation.jpg') }}"
+                            alt="Pressure Compensation" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.powermotiontech.com/hydraulics/hydraulic-valves/article/21887951/understanding-pressure-control-valves"
+                                    target="_blank">Power Motion Tech – Pressure Control Valves</a></li>
+                            <li><a href="https://btpco.com/download/training/Fluid%20power%20Basics%20-Bud%20Trinkel.pdf"
+                                    target="_blank">Fluid Power Basics – Bud Trinkel</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Pressure Gauge -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Pressure-Gauge">Pressure Gauge</h1>
+                        <h2>Definition</h2>
+                        <p>An instrument that measures and indicates the pressure of a fluid (liquid or gas) in a
+                            system.
+                        </p>
+                        <h2>Function</h2>
+                        <p>Provides a reading of system pressure, allowing monitoring and ensuring safe operation.</p>
+                        <img src="{{ url_for('static', filename='images/materials/pressure-gauge.png') }}"
+                            alt="Pressure Gauge" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://en.wikipedia.org/wiki/Pressure_measurement" target="_blank">Wikipedia –
+                                    Pressure
+                                    Measurement</a></li>
+                            <li><a href="https://www.lunchboxsessions.com/materials/directional-control-valves/intro-to-directional-control-valves-lesson"
+                                    target="_blank">Lunchbox Sessions – Directional Control Valves</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Pressure Regulator -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Pressure-Regulator">Pressure Regulator</h1>
+                        <h2>Definition</h2>
+                        <p>A device that maintains a desired pressure level within a fluid-power system.</p>
+                        <h2>Function</h2>
+                        <p>Keeps system pressure stable or within safe limits so actuators and components operate
+                            correctly.
+                        </p>
+                        <img src="{{ url_for('static', filename='images/materials/pressure-regulator.png') }}"
+                            alt="Pressure Regulator" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.powermotiontech.com/hydraulics/hydraulic-valves/article/21884995/engineering-essentials-pressure-control-valves"
+                                    target="_blank">Power Motion Tech – Pressure Control Valves</a></li>
+                            <li><a href="https://tameson.com/pages/pressure-regulator" target="_blank">Tameson –
+                                    Pressure
+                                    Regulator</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Pressure Transducer -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Pressure-Transducer">Pressure Transducer</h1>
+                        <h2>Definition</h2>
+                        <p>A sensor (also called pressure sensor/transmitter) that senses fluid (liquid or gas) pressure
+                            and
+                            converts it
+                            into an electrical signal proportional to the pressure.</p>
+                        <h2>Function</h2>
+                        <p>Enables measurement and monitoring of pressure in hydraulic, pneumatic, or fluid systems;
+                            useful
+                            for system
+                            control, safety valves, process monitoring, feedback to controllers, and data logging.</p>
+                        <img src="{{ url_for('static', filename='images/materials/pressure-transducer.png') }}"
+                            alt="Pressure Transducer" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://blog.ashcroft.com/what-is-a-pressure-transducer?"
+                                    target="_blank">Ashcroft
+                                    – Pressure
+                                    Transducer</a></li>
+                            <li><a href="https://uk.rs-online.com/web/content/discovery/ideas-and-advice/pressure-sensors-guide?"
+                                    target="_blank">RS Online – Pressure Sensors Guide</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Pressure Relief Valve -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Pressure-Relief-Valve">Pressure Relief Valve</h1>
+                        <h2>Definition</h2>
+                        <p>A valve that opens when system pressure exceeds a preset “cracking” pressure, providing an
+                            alternate path for
+                            fluid to flow.</p>
+                        <h2>Function</h2>
+                        <p>Prevents damage by limiting maximum pressure in the system; diverts excess fluid to protect
+                            pumps, lines, and
+                            actuators.</p>
+                        <img src="{{ url_for('static', filename='images/materials/pressure-relief-valve.png') }}"
+                            alt="Pressure Relief Valve" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.sciencedirect.com/topics/engineering/relief-valve"
+                                    target="_blank">ScienceDirect –
+                                    Relief Valve</a></li>
+                            <li><a href="https://www.pcpolytechnic.com/automobile/ppt/Chapter_4_HYDRAULIC.pdf"
+                                    target="_blank">PC
+                                    Polytechnic – Hydraulic Relief Valve</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Projector/Computer -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Projector/Computer">Projector/Computer</h1>
+                        <h2>Definition</h2>
+                        <p>A device to display slides or digital materials on a screen.</p>
+                        <h2>Function</h2>
+                        <p>Used in demonstrations, lectures, and presentations.</p>
+                        <img src="{{ url_for('static', filename='images/materials/projector-computer.png') }}"
+                            alt="Projector/Computer" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.lenovo.com" target="_blank">Lenovo – Projector Types</a></li>
+                            <li><a href="https://www.computerhope.com" target="_blank">Computer Hope – What is a
+                                    Projector?</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Proximity Sensor -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Proximity-Sensor">Proximity Sensor</h1>
+                        <h2>Definition</h2>
+                        <p>A non-contact sensor that detects the presence (or absence) of nearby objects (metallic or
+                            non-metallic)
+                            without physical contact using principles like inductive, capacitive, ultrasonic, or
+                            photoelectric.</p>
+                        <h2>Function</h2>
+                        <p>Detects parts, objects or targets in industrial automation (e.g. object detection on conveyor
+                            belts, position
+                            detection, limit switching, safety interlocks) enabling machines to respond when objects
+                            enter
+                            or leave a
+                            detection zone.</p>
+                        <img src="{{ url_for('static', filename='images/materials/proximity-sensor-capacitive.jpg') }}"
+                            alt="Proximity Sensor" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://en.wikipedia.org/wiki/Proximity_sensor" target="_blank">Wikipedia –
+                                    Proximity
+                                    Sensor</a></li>
+                            <li><a href="https://www.sciencedirect.com/topics/engineering/proximity-sensor"
+                                    target="_blank">ScienceDirect – Proximity Sensor</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Proximity Sensors (inductive, capacitive) -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Proximity-Sensors-(Inductive,-Capacitive)">Proximity Sensors (Inductive, Capacitive)
+                        </h1>
+                        <h2>Definition</h2>
+                        <p>A proximity sensor is a non-contact device that detects the presence of nearby objects by
+                            emitting a field or
+                            beam and sensing changes in the return signal.</p>
+                        <h2>Function</h2>
+                        <p>Inductive – detects metal<br>Capacitive – detects non-metal objects<br>Used for counting,
+                            detection, safety.
+                        </p>
+                        <img src="{{ url_for('static', filename='images/materials/proximity-sensor-inductive.png') }}"
+                            alt="Proximity Sensors" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://en.wikipedia.org/wiki/Proximity_sensor" target="_blank">Wikipedia –
+                                    Proximity
+                                    Sensor</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Pulse Generator -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Pulse-Generator">Pulse Generator</h1>
+                        <h2>Definition</h2>
+                        <p>A device or module that generates the series of electrical pulses (and optionally direction
+                            signals) required
+                            to drive the stepper driver, determining when and how many steps the motor makes.</p>
+                        <h2>Function</h2>
+                        <p>Provides the precise timing and count of pulses required so the stepper motor moves the
+                            correct
+                            number of
+                            steps (and thus correct angle) at the desired speed — essentially commands the motion.</p>
+                        <img src="{{ url_for('static', filename='images/materials/pulse-generator.png') }}"
+                            alt="Pulse Generator" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.electricaleasy.com/2017/09/componenets-stepper-motor-drive.html"
+                                    target="_blank">Electrical Easy – Stepper Motor Drive</a></li>
+                            <li><a href="https://www.citytechbd.com/DC-12V-24V-Stepper-Motor-Pulse-Signal-Generator-Module-For-Stepper-Motor"
+                                    target="_blank">CityTechBD – Pulse Generator Module</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Push Buttons (NO/NC) -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Push-Buttons-(NO/NC)">Push Buttons (NO/NC)</h1>
+                        <h2>Definition</h2>
+                        <p>A push button is a simple, mechanical or electrical switch that is activated by pressing a
+                            button, which can
+                            control a machine, process, or electronic circuit.</p>
+                        <h2>Function</h2>
+                        <p>NO (Normally Open) – closes when pressed<br>NC (Normally Closed) – opens when pressed<br>Used
+                            for
+                            start,
+                            stop, reset functions.</p>
+                        <img src="{{ url_for('static', filename='images/materials/push-buttons-no-nc.png') }}"
+                            alt="Push Buttons" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://en.wikipedia.org/wiki/Push-button" target="_blank">Wikipedia – Push
+                                    Button</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- RAM -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="RAM">RAM</h1>
+                        <h2>Definition</h2>
+                        <p>Random Access Memory (RAM) is a type of volatile memory used by computers to store data
+                            temporarily.</p>
+                        <h2>Function</h2>
+                        <p>Provides fast read/write access for running programs and processes.</p>
+                        <img src="{{ url_for('static', filename='images/materials/ram.png') }}" alt="RAM"
+                            class="topic-image">
+                    </div>
+                </div>
+
+                <!-- Raw Materials -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Raw-Materials">Raw Materials</h1>
+                        <h2>Definition</h2>
+                        <p>Basic substances used to produce goods (e.g., metals, plastics, wood).</p>
+                        <h2>Function</h2>
+                        <p>Serve as the foundation for manufacturing processes.</p>
+                        <img src="{{ url_for('static', filename='images/materials/raw-materials.png') }}"
+                            alt="Raw Materials" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.britannica.com/topic/raw-material" target="_blank">Britannica – Raw
+                                    Material</a>
+                            </li>
+                            <li><a href="https://www.sciencedirect.com/topics/engineering/raw-material"
+                                    target="_blank">ScienceDirect –
+                                    Raw Material</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Red LED -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Red-LED">Red LED</h1>
+                        <h2>Definition</h2>
+                        <p>A red LED emits light in the red wavelength range, typically 620–750 nm. It is often used as
+                            an
+                            indicator in
+                            circuits, displays, or signaling devices. Red LEDs are low-power, efficient, and easy to
+                            integrate into
+                            electronic projects.</p>
+                        <h2>Function</h2>
+                        <p>Indicator, signal, decoration.</p>
+                        <img src="{{ url_for('static', filename='images/materials/red-led.png') }}" alt="Red LED"
+                            class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.google.com/amp/s/phys.org/news/2020-07-red-light-next-generation.amp"
+                                    target="_blank">Phys.org – Red Light Next Generation</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Reed Switch -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Reed-Switch">Reed Switch</h1>
+                        <h2>Definition</h2>
+                        <p>A magnetically operated switch inside a sealed glass tube.</p>
+                        <h2>Function</h2>
+                        <p>Detects piston movement in pneumatic cylinders.</p>
+                        <img src="{{ url_for('static', filename='images/materials/reed-switch.png') }}"
+                            alt="Reed Switch" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://uk.rs-online.com/web/content/discovery/ideas-and-advice/reed-switches-guide"
+                                    target="_blank">RS Online – Reed Switch Guide</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Relay Module -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Relay-Module">Relay Module</h1>
+                        <h2>Definition</h2>
+                        <p>An electrically operated switch controlled by a low-voltage signal.</p>
+                        <h2>Function</h2>
+                        <p>Enables microcontrollers to control high-power devices safely.</p>
+                        <img src="{{ url_for('static', filename='images/materials/relay-module.png') }}"
+                            alt="Relay Module" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.geya.net/what-is-a-relay-module-how-does-it-work-types-uses/"
+                                    target="_blank">GEYA
+                                    – Relay Module Basics</a></li>
+                            <li><a href="https://kunkune.co.uk/understanding-the-basics-what-is-a-relay-module/"
+                                    target="_blank">Kunkune
+                                    – Relay Module Guide</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Resistor -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Resistor">Resistor</h1>
+                        <h2>Definition</h2>
+                        <p>A component that limits or regulates current flow in a circuit.</p>
+                        <h2>Function</h2>
+                        <p>Protects components, divides voltage, and biases circuits.</p>
+                        <img src="{{ url_for('static', filename='images/materials/resistor.png') }}" alt="Resistor"
+                            class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://en.wikipedia.org/wiki/Resistor" target="_blank">Wikipedia –
+                                    Resistor</a>
+                            </li>
+                            <li><a href="https://eepower.com/resistor-guide/resistor-fundamentals/" target="_blank">EE
+                                    Power
+                                    – Resistor
+                                    Fundamentals</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Resistor Kit -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Resistor-Kit">Resistor Kit</h1>
+                        <h2>Definition</h2>
+                        <p>A resistor kit contains multiple resistors of different resistance values for experimentation
+                            and
+                            prototyping. It provides convenience for circuit design and testing. Resistor kits are
+                            popular
+                            among
+                            students and hobbyists.</p>
+                        <h2>Function</h2>
+                        <p>Supplies components for prototyping.</p>
+                        <img src="{{ url_for('static', filename='images/materials/resistor-kit.png') }}"
+                            alt="Resistor Kit" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://eepower.com/resistor-guide/resistor-standards-and-codes/resistor-sizes-and-packages/"
+                                    target="_blank">EE Power – Resistor Sizes and Packages</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Robotic Arms -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Robotic-Arms">Robotic Arms</h1>
+                        <h2>Definition</h2>
+                        <p>Programmable mechanical arms used in automation.</p>
+                        <h2>Function</h2>
+                        <p>Perform tasks such as welding, assembly, and material handling.</p>
+                        <img src="{{ url_for('static', filename='images/materials/robotic-arms.png') }}"
+                            alt="Robotic Arms" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.sciencedirect.com/topics/engineering/robotic-arm"
+                                    target="_blank">ScienceDirect –
+                                    Robotic Arm</a></li>
+                            <li><a href="https://www.britannica.com/technology/robot" target="_blank">Britannica –
+                                    Robot</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- RS485 Converter -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="RS485-Converter">RS485 Converter</h1>
+                        <h2>Definition</h2>
+                        <p>A device (sometimes called serial-server or gateway) that converts between the serial
+                            communication standard
+                            RS‑485 and Ethernet (or another network protocol).</p>
+                        <h2>Function</h2>
+                        <p>Allows legacy RS-485 serial devices (sensors, controllers, meters, etc.) to connect to modern
+                            Ethernet-based
+                            networks, enabling remote monitoring/control, centralized data acquisition, or integration
+                            with
+                            SCADA/IoT
+                            systems.</p>
+                        <img src="{{ url_for('static', filename='images/materials/rs485-converter.png') }}"
+                            alt="RS485 Converter" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://iotstudioz.com/what-is-an-rs485-to-ethernet-converter-and-why-is-it-essential-for-industrial-networking/"
+                                    target="_blank">IoT Studioz – RS485 to Ethernet Converter</a></li>
+                            <li><a href="https://www.pusr.com/news/What-is-the-function-of-RS485-in-Ethernet-to-RS485-converter.html"
+                                    target="_blank">PUSR – RS485 Converter Function</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Sample Embedded Devices -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Sample-Embedded-Devices">Sample Embedded Devices</h1>
+                        <h2>Definition</h2>
+                        <p>Pre-built microcontroller-based systems for study.</p>
+                        <h2>Function</h2>
+                        <p>Demonstrates real-world applications and functionality of embedded systems.</p>
+                        <img src="{{ url_for('static', filename='images/materials/Sample embedded device.png') }}"
+                            alt="Sample Embedded Devices" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.techtarget.com" target="_blank">TechTarget – Embedded Device</a>
+                            </li>
+                            <li><a href="https://www.researchgate.net" target="_blank">ResearchGate – Example Embedded
+                                    Devices</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <!-- Screw Pair -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Screw-Pair">Screw Pair</h1>
+                        <h2>Definition</h2>
+                        <p>A kinematic pair where relative motion occurs as rotation combined with translation.</p>
+                        <h2>Function</h2>
+                        <p>Converts rotary motion into linear motion, as in screws and bolts.</p>
+                        <img src="{{ url_for('static', filename='images/materials/Screw pair.png') }}" alt="Screw Pair"
+                            class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.sciencedirect.com/topics/engineering/screw-mechanism"
+                                    target="_blank">ScienceDirect
+                                    – Screw Mechanism</a></li>
+                            <li><a href="https://www.mechanicalc.com/kinematics-of-machinery/"
+                                    target="_blank">MechanicalC –
+                                    Kinematics
+                                    of Machinery</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Selector Switches -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Selector-Switches">Selector Switches</h1>
+                        <h2>Definition</h2>
+                        <p>A selector switch is a manual or electric device that redirects an electrical current between
+                            two
+                            or more
+                            circuits.</p>
+                        <h2>Function</h2>
+                        <p>Multi-position manual switches, used for mode selection (Auto/Manual/Jog).</p>
+                        <img src="{{ url_for('static', filename='images/materials/Selector switches.png') }}"
+                            alt="Selector Switches" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.rjselectronics.com/blog/2021/rjs-products-product-updates/what-are-selector-switches/"
+                                    target="_blank">RJ Electronics – Selector Switches</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Sensor Indicator Module -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Sensor-Indicator-Module">Sensor Indicator Module</h1>
+                        <h2>Definition</h2>
+                        <p>A module with LED indicators that show sensor ON/OFF status.</p>
+                        <h2>Function</h2>
+                        <p>Helps technicians see sensor activity quickly during testing.</p>
+                        <img src="{{ url_for('static', filename='images/materials/Sensor indicator module.png') }}"
+                            alt="Sensor Indicator Module" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.microscale.net/products/ldr-sensor-module?srsltid=AfmBOoq7cA9I6T1wAZVzRNYpXpHfo4CF-v154N2gWklDyM-4UbRduOpY"
+                                    target="_blank">Microscale – Sensor Module</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Sensor Mounting Bracket -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Sensor-Mounting-Bracket">Sensor Mounting Bracket</h1>
+                        <h2>Definition</h2>
+                        <p>A metal or plastic holder for attaching sensors securely to machines.</p>
+                        <h2>Function</h2>
+                        <p>Ensures proper alignment and detection accuracy.</p>
+                        <img src="{{ url_for('static', filename='images/materials/Sensor mounting bracket.png') }}"
+                            alt="Sensor Mounting Bracket" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.directindustry.com/prod/hukseflux-thermal-sensors-bv/product-88003-2070177.html"
+                                    target="_blank">DirectIndustry – Sensor Mounting Bracket</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Sensors -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Sensors">Sensors</h1>
+                        <h2>Definition</h2>
+                        <p>Devices that detect changes in physical parameters like temperature, distance, or light.</p>
+                        <h2>Function</h2>
+                        <p>Provide input signals to control systems for automation or feedback.</p>
+                        <img src="{{ url_for('static', filename='images/materials/sensors.png') }}" alt="Sensors"
+                            class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://en.wikipedia.org/wiki/Sensor" target="_blank">Wikipedia – Sensor</a>
+                            </li>
+                            <li><a href="https://www.techtarget.com" target="_blank">TechTarget – What Are Sensors?</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Sequence Valve -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Sequence-Valve">Sequence Valve</h1>
+                        <h2>Definition</h2>
+                        <p>Use of a Sequence Valve (or similar) to coordinate operations in a hydraulic/pneumatic
+                            circuit so
+                            that one
+                            actuator or function only activates after a prior function completes and certain pressure is
+                            reached.</p>
+                        <h2>Function</h2>
+                        <p>Ensures the correct order of operations e.g. ensuring Cylinder A fully extends before
+                            Cylinder B
+                            operates, or
+                            ensuring priority for one function before another.</p>
+                        <img src="{{ url_for('static', filename='images/materials/SequenceValves.png') }}"
+                            alt="Sequence Valve" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.powermotiontech.com/hydraulics/hydraulic-valves/article/21887951/understanding-pressure‑control‑valves"
+                                    target="_blank">Power Motion Tech – Pressure Control Valves</a></li>
+                            <li><a href="https://www.blog-teknisi.com/2020/06/basic-hydraulics-pressure-control.html"
+                                    target="_blank">Blog Teknisi – Pressure Control Basics</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Servo Controller -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Servo-Controller">Servo Controller</h1>
+                        <h2>Definition</h2>
+                        <p>An electronic amplifier/drive unit used to power and control the servo motor; it receives
+                            command
+                            signals
+                            (position, speed, torque target), monitors feedback from the motor (via encoder or sensor),
+                            and
+                            adjusts
+                            output accordingly.</p>
+                        <h2>Function</h2>
+                        <p>Acts as the “brain” of the servo system interpreting control input, comparing to feedback
+                            (actual
+                            position/speed), and adjusting power to motor so the motor moves correctly and precisely
+                            according to
+                            commands.</p>
+                        <img src="{{ url_for('static', filename='images/materials/Servo controller.png') }}"
+                            alt="Servo Controller" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://en.wikipedia.org/wiki/Servo_drive" target="_blank">Wikipedia – Servo
+                                    Drive</a></li>
+                            <li><a href="https://intech-group.vn/what-is-a-servo-motor-the-role-of-servo-controllers-in-industrial-automation-bv1384.htm"
+                                    target="_blank">Intech Group – Servo Controllers</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Servo Motor -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Servo-Motor">Servo Motor</h1>
+                        <h2>Definition</h2>
+                        <p>An electric motor (AC or DC) integrated in a “servo‑system” that, together with sensors and
+                            control logic,
+                            enables controlled motion position, speed, or torque rather than simple continuous rotation.
+                        </p>
+                        <h2>Function</h2>
+                        <p>Provides the mechanical output (rotation or linear motion) under precise control allowing
+                            accurate
+                            angular/linear positioning, smooth speed/torque control, and repeatable motion; ideal for
+                            robotics, CNC
+                            machines, automation.</p>
+                        <img src="{{ url_for('static', filename='images/materials/Servo motor.png') }}"
+                            alt="Servo Motor" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://en.wikipedia.org/wiki/Servomotor" target="_blank">Wikipedia –
+                                    Servomotor</a></li>
+                            <li><a href="https://blog.se.com/industry/machine-and-process-management/2019/03/07/understanding-servo-motors-and-servo-drives/"
+                                    target="_blank">Schneider Electric – Servo Motors and Drives</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Sheave -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Sheave">Sheave</h1>
+                        <h2>Definition</h2>
+                        <p>A pulley wheel used in belt or rope drives.</p>
+                        <h2>Function</h2>
+                        <p>Guides and supports belts or ropes, transmitting power efficiently.</p>
+                        <img src="{{ url_for('static', filename='images/materials/sheave.png') }}" alt="Sheave"
+                            class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.sciencedirect.com/topics/engineering/sheave"
+                                    target="_blank">ScienceDirect –
+                                    Sheave</a></li>
+                            <li><a href="https://www.engineeringchoice.com/pulleys/" target="_blank">Engineering Choice
+                                    –
+                                    Pulleys</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Shielded Cable -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Shielded-Cable">Shielded Cable</h1>
+                        <h2>Definition</h2>
+                        <p>An electrical cable that includes a conductive shield (metal foil or braided conductor)
+                            around
+                            its internal
+                            conductors, acting as a Faraday cage to block external electromagnetic interference (EMI)
+                            and
+                            prevent signal
+                            degradation.</p>
+                        <h2>Function</h2>
+                        <p>Maintains integrity and reliability of sensor signal transmission, especially analog or
+                            low-level
+                            signals;
+                            prevents noise pickup from nearby equipment/motors, ensures accurate measurement, and
+                            reduces
+                            risk of
+                            interference-induced errors.</p>
+                        <img src="{{ url_for('static', filename='images/materials/Shielded cable.png') }}"
+                            alt="Shielded Cable" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://en.wikipedia.org/wiki/Shielded_cable" target="_blank">Wikipedia –
+                                    Shielded
+                                    Cable</a>
+                            </li>
+                            <li><a href="https://www.cbcables.com/blog/what-is-the-purpose-of-shielding-in-cables.html"
+                                    target="_blank">CBCables – Shielding in Cables</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Signal Cable Set -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Signal-Cable-Set">Signal Cable Set</h1>
+                        <h2>Definition</h2>
+                        <p>Wiring harness or cable assembly that connects the servo controller, servo motor, encoder
+                            (feedback), and
+                            power supply carrying control signals, power, ground, and feedback.</p>
+                        <h2>Function</h2>
+                        <p>Transmits the control commands to the servo system and carries back feedback signals from the
+                            encoder;
+                            ensures coordinated communication and power delivery.</p>
+                        <img src="{{ url_for('static', filename='images/materials/Signalcableset.png') }}"
+                            alt="Signal Cable Set" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://en.wikipedia.org/wiki/Servomechanism" target="_blank">Wikipedia –
+                                    Servomechanism</a>
+                            </li>
+                            <li><a href="https://blog.se.com/industry/machine-and-process-management/2019/03/07/understanding-servo-motors-and-servo-drives/"
+                                    target="_blank">Schneider Electric – Servo Motors and Drives</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Signal Conditioner -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Signal-Conditioner">Signal Conditioner</h1>
+                        <h2>Definition</h2>
+                        <p>An electronic module or circuit that processes, amplifies, filters, linearizes, or converts
+                            the
+                            raw output
+                            signal from a sensor into a stable, standardized signal suitable for controllers or data
+                            acquisition
+                            systems.</p>
+                        <h2>Function</h2>
+                        <p>Ensures that sensor outputs (which may be weak, noisy, or non-standard) are converted into
+                            reliable, usable
+                            signals for measurement, control, or monitoring; improves signal quality, reduces noise
+                            vulnerability, and
+                            allows long-distance transmission.</p>
+                        <img src="{{ url_for('static', filename='images/materials/Signal Conditioners.png') }}"
+                            alt="Signal Conditioner" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.omega.co.uk/prodinfo/Pressure-Transducers.html"
+                                    target="_blank">Omega –
+                                    Pressure
+                                    Transducers</a></li>
+                            <li><a href="https://www.kuk.ac.in/wp-content/uploads/notes/Notes_159_Module1_Introduction.pdf"
+                                    target="_blank">KUK University – Signal Conditioning Notes</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Silicon -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Silicon">Silicon</h1>
+                        <h2>Definition</h2>
+                        <p>Silicon is a semiconductor material used as the base (wafer) for building microchips.</p>
+                        <h2>Function</h2>
+                        <p>Forms the substrate for transistor fabrication. Can be doped to create conductive and
+                            non-conductive regions.
+                            Enables switching behavior for binary logic.</p>
+                        <img src="{{ url_for('static', filename='images/materials/silicon.png') }}" alt="Silicon"
+                            class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.asml.com/en/technology/all-about-microchips/microchip-basics"
+                                    target="_blank">ASML
+                                    – Microchip Basics</a></li>
+                            <li><a href="https://en.wikipedia.org/wiki/Silicon" target="_blank">Wikipedia – Silicon</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <!-- Solar Panel -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Solar-Panel">Solar Panel</h1>
+                        <h2>Definition</h2>
+                        <p>A device that converts sunlight into electricity using photovoltaic cells.</p>
+                        <h2>Function</h2>
+                        <p>Provides renewable energy for homes, industries, and portable devices.</p>
+                        <img src="{{ url_for('static', filename='images/materials/Solar panels.png') }}"
+                            alt="Solar Panel" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.energy.gov/eere/solar/solar-photovoltaic-cell-basics"
+                                    target="_blank">Energy.gov –
+                                    Solar Basics</a></li>
+                            <li><a href="https://www.nationalgeographic.com/environment/article/solar-energy"
+                                    target="_blank">National
+                                    Geographic – Solar Energy</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Solenoid Valve -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Solenoid-Valve">Solenoid Valve</h1>
+                        <h2>Definition</h2>
+                        <p>An electrically controlled valve that directs airflow for extending or retracting cylinders.
+                        </p>
+                        <h2>Function</h2>
+                        <p>Controls air pathways in timing-controlled pneumatic systems.</p>
+                        <img src="{{ url_for('static', filename='images/materials/Solenoid valve.png') }}"
+                            alt="Solenoid Valve" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://tameson.com/products/tp-dc014b040e-380ac-solenoid-valve-3-2-way-1-4-inch-brass-epdm-0-3p5bar-380vac"
+                                    target="_blank">Tameson – Solenoid Valve</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Spherical Pair -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Spherical-Pair">Spherical Pair</h1>
+                        <h2>Definition</h2>
+                        <p>A kinematic pair allowing rotational motion in all directions.</p>
+                        <h2>Function</h2>
+                        <p>Provides three degrees of freedom, used in ball-and-socket joints.</p>
+                        <img src="{{ url_for('static', filename='images/materials/Spherical pair.png') }}"
+                            alt="Spherical Pair" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.sciencedirect.com/topics/engineering/spherical-joint"
+                                    target="_blank">ScienceDirect
+                                    – Spherical Joint</a></li>
+                            <li><a href="https://www.mechanicalc.com/kinematics-of-machinery/"
+                                    target="_blank">MechanicalC –
+                                    Kinematics
+                                    of Machinery</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Start Push Button -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Start-Push-Button">Start Push Button</h1>
+                        <h2>Definition</h2>
+                        <p>A start push button is a momentary switch used to energize circuits or start machines.
+                            Pressing
+                            it completes
+                            the circuit temporarily to activate relays or motors. It is commonly used in control panels
+                            and
+                            automation
+                            systems.</p>
+                        <h2>Function</h2>
+                        <p>Energizes relays or motors.</p>
+                        <img src="{{ url_for('static', filename='images/materials/Startpushbutton.png') }}"
+                            alt="Start Push Button" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://docs.wokwi.com/parts/wokwi-pushbutton" target="_blank">Wokwi – Push
+                                    Button</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Stepper Driver Module -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Stepper-Driver-Module">Stepper Driver Module</h1>
+                        <h2>Definition</h2>
+                        <p>An electronic circuit/module that receives control signals (pulses + direction) and energizes
+                            the
+                            stepper
+                            motor windings accordingly, controlling current and coil activation.</p>
+                        <h2>Function</h2>
+                        <p>Translates control pulses into the correct sequence of currents to the motor coils, enabling
+                            the
+                            stepper
+                            motor to turn step-by-step; also regulates current/voltage to protect the motor and ensure
+                            stable operation.
+                        </p>
+                        <img src="{{ url_for('static', filename='images/materials/Steplerdrivermodule.png') }}"
+                            alt="Stepper Driver Module" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.electrical4u.com/stepper-motor-drive/" target="_blank">Electrical4U
+                                    –
+                                    Stepper Motor
+                                    Drive</a></li>
+                            <li><a href="https://www.elprocus.com/what-is-a-stepper-motor-driver-types-and-its-applications/"
+                                    target="_blank">Elprocus – Stepper Motor Driver</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Stepper Motor -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Stepper-Motor">Stepper Motor</h1>
+                        <h2>Definition</h2>
+                        <p>An electromechanical motor that converts discrete electrical pulses into precise, incremental
+                            angular shaft
+                            rotations.</p>
+                        <h2>Function</h2>
+                        <p>Provides controlled mechanical output: each input pulse rotates the shaft by a fixed “step,”
+                            enabling
+                            accurate positioning, repeatable motion, and good torque at low speeds or when stopped.</p>
+                        <img src="{{ url_for('static', filename='images/materials/Stepper motor.png') }}"
+                            alt="Stepper Motor" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://en.wikipedia.org/wiki/Stepper_motor" target="_blank">Wikipedia –
+                                    Stepper
+                                    Motor</a></li>
+                            <li><a href="https://www.pulsemotor.com/global/Engineering/What_is_stepper_motor.html"
+                                    target="_blank">Pulse
+                                    Motor – Stepper Motor</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <!-- Switch -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Switch">Switch</h1>
+                        <h2>Definition</h2>
+                        <p>A device that opens or closes an electrical circuit.</p>
+                        <h2>Function</h2>
+                        <p>Controls power supply or signal flow in a system.</p>
+                        <img src="{{ url_for('static', filename='images/materials/switch.png') }}" alt="Switch"
+                            class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://theswitch.com" target="_blank">The Switch – Green Technologies</a></li>
+                            <li><a href="https://en.wikipedia.org/wiki/Switch" target="_blank">Wikipedia – Switch</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Temperature Sensor -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Temperature-Sensor">Temperature Sensor</h1>
+                        <h2>Definition</h2>
+                        <p>A device that measures temperature (heat level) of an environment or object and converts this
+                            measurement
+                            into an electrical signal (analog or digital) for monitoring or control.</p>
+                        <h2>Function</h2>
+                        <p>Monitors temperature conditions, ensures processes or systems operate within safe or desired
+                            ranges, enables
+                            feedback for control systems (e.g. heaters, coolers), and helps protect equipment from
+                            overheating or
+                            freezing.</p>
+                        <img src="{{ url_for('static', filename='images/materials/Temperature sensor.png') }}"
+                            alt="Temperature Sensor" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.kuk.ac.in/wp-content/uploads/notes/Notes_159_Module1_Introduction.pdf"
+                                    target="_blank">KUK University – Sensor Notes</a></li>
+                            <li><a href="https://www.scribd.com/document/107128082/Types-of-Sensors"
+                                    target="_blank">Scribd
+                                    – Types of
+                                    Sensors</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <!-- Timer and Clock Demo Circuits -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Timer-and-Clock-Demo-Circuits">Timer and Clock Demo Circuits</h1>
+                        <h2>Definition</h2>
+                        <p>Circuits demonstrating timing functions.</p>
+                        <h2>Function</h2>
+                        <p>Teach pulse generation, delay circuits, and time-dependent system behavior.</p>
+                        <img src="{{ url_for('static', filename='images/materials/Timer and demo circuits.png') }}"
+                            alt="Timer and Clock Demo Circuits" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.instructables.com/Learning-Sequential-Logic-Design-for-a-Digital-Clock-14-Steps/"
+                                    target="_blank">Instructables – Digital Clock Logic Design</a></li>
+                            <li><a href="https://www.electronics-tutorials.ws/waveforms/555_timer.html"
+                                    target="_blank">Electronics
+                                    Tutorials – 555 Timer Tutorial</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Transistors -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Transistors">Transistors</h1>
+                        <h2>Definition</h2>
+                        <p>A transistor is an electronic switch that controls current flow. Billions of transistors are
+                            packed into
+                            microprocessors.</p>
+                        <h2>Function</h2>
+                        <p>Acts as an ON/OFF switch → binary 1/0. Forms logic gates, memory cells, registers. Enables
+                            amplification,
+                            switching, and signal control.</p>
+                        <img src="{{ url_for('static', filename='images/materials/Transistor.png') }}" alt="Transistors"
+                            class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.techtarget.com/whatis/definition/transistor"
+                                    target="_blank">TechTarget
+                                    –
+                                    Transistor</a></li>
+                            <li><a href="https://en.wikipedia.org/wiki/Transistor" target="_blank">Wikipedia –
+                                    Transistor</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Voltmeter -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Voltmeter">Voltmeter</h1>
+                        <h2>Definition</h2>
+                        <p>Measures electric potential difference between two points.</p>
+                        <h2>Function</h2>
+                        <p>Checks voltage levels and verifies circuit functionality.</p>
+                        <img src="{{ url_for('static', filename='images/materials/voltmeter.png') }}" alt="Voltmeter"
+                            class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.electronics-tutorials.ws/dccircuits/dcp_3.html"
+                                    target="_blank">Electronics
+                                    Tutorials – Voltmeter</a></li>
+                            <li><a href="https://byjus.com/physics/voltmeter/" target="_blank">BYJU'S – Voltmeter</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Wattmeter -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Wattmeter">Wattmeter</h1>
+                        <h2>Definition</h2>
+                        <p>Measures electrical power consumed by a circuit.</p>
+                        <h2>Function</h2>
+                        <p>Calculates energy usage by combining current and voltage measurements.</p>
+                        <img src="{{ url_for('static', filename='images/materials/Watt meter.png') }}" alt="Wattmeter"
+                            class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://en.wikipedia.org/wiki/Wattmeter" target="_blank">Wikipedia –
+                                    Wattmeter</a>
+                            </li>
+                            <li><a href="https://www.geeksforgeeks.org/wattmeter/" target="_blank">GeeksforGeeks –
+                                    Wattmeter</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Welding Equipment -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Welding-Equipment">Welding Equipment</h1>
+                        <h2>Definition</h2>
+                        <p>Tools and machines used to join materials, typically metals, by heat or pressure.</p>
+                        <h2>Function</h2>
+                        <p>Essential in construction, manufacturing, and repair.</p>
+                        <img src="{{ url_for('static', filename='images/materials/Welding equipments.png') }}"
+                            alt="Welding Equipment" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.sciencedirect.com/topics/engineering/welding"
+                                    target="_blank">ScienceDirect –
+                                    Welding</a></li>
+                            <li><a href="https://www.britannica.com/technology/welding" target="_blank">Britannica –
+                                    Welding</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Wire Leads -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Wire-Leads">Wire Leads</h1>
+                        <h2>Definition</h2>
+                        <p>Wire leads are insulated conductors used to make electrical connections between components.
+                            They
+                            come in
+                            various colors, lengths, and thicknesses for different applications. Wire leads are
+                            essential
+                            for building
+                            and testing circuits.</p>
+                        <h2>Function</h2>
+                        <p>Make electrical connections on breadboards or PCBs.</p>
+                        <img src="{{ url_for('static', filename='images/materials/Wire leads.png') }}" alt="Wire Leads"
+                            class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://en.wikipedia.org/wiki/Jump_wire" target="_blank">Wikipedia – Jump
+                                    Wire</a>
+                            </li>
+                            <li><a href="https://connectorsupplier.com/what-are-lead-wires/" target="_blank">Connector
+                                    Supplier – Lead
+                                    Wires</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Wiring Tools -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Wiring-Tools">Wiring Tools</h1>
+                        <h2>Definition</h2>
+                        <p>Tools like strippers, cutters, and crimpers for handling wires.</p>
+                        <h2>Function</h2>
+                        <p>Used for building, connecting, and maintaining circuits safely.</p>
+                        <img src="{{ url_for('static', filename='images/materials/Wiring tools.png') }}"
+                            alt="Wiring Tools" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.scribd.com/document/123456789/Electrical-Tools-and-Equipments"
+                                    target="_blank">Scribd – Electrical Tools and Equipment</a></li>
+                            <li><a href="https://bax.tools/ELECTRICIAN-TOOLS" target="_blank">Bax Tools – Electrician
+                                    Tools</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Zener Diode -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="Zener-Diode">Zener Diode</h1>
+                        <h2>Definition</h2>
+                        <p>A Zener diode is designed to allow current to flow in the reverse direction when a specific
+                            breakdown voltage
+                            is reached. It is mainly used for voltage regulation, protecting circuits from voltage
+                            spikes.
+                            Zener diodes
+                            ensure stable voltage across sensitive components.</p>
+                        <h2>Function</h2>
+                        <p>Voltage regulation, protection circuits.</p>
+                        <img src="{{ url_for('static', filename='images/materials/Zener diode.png') }}"
+                            alt="Zener Diode" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.electronics-tutorials.ws/diode/diode_7.html"
+                                    target="_blank">Electronics Tutorials
+                                    – Zener Diode</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 1N4007 Rectifier Diode -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="1N4007-Rectifier-Diode">1N4007 Rectifier Diode</h1>
+                        <h2>Definition</h2>
+                        <p>The 1N4007 is a general-purpose rectifier diode used to convert AC to DC in electronic
+                            circuits.
+                            It can
+                            handle up to 1A of current and reverse voltage up to 1000V. This diode is widely used in
+                            power
+                            supplies and
+                            other low-frequency applications.</p>
+                        <h2>Function</h2>
+                        <p>Converts AC to DC in low-power circuits.</p>
+                        <img src="{{ url_for('static', filename='images/materials/1N4007 Rectifier Diode.png') }}"
+                            alt="1N4007 Rectifier Diode" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.blikai.com/blog/featured-products/what-is-a-1n4007-diode-and-how-is-it-used-in-circuits"
+                                    target="_blank">Blikai – 1N4007 Diode</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 24V DC Power Supply -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="24V-DC-Power-Supply">24V DC Power Supply</h1>
+                        <h2>Definition</h2>
+                        <p>An electrical supply device that provides stable 24V DC for sensors, PLCs, and relays.</p>
+                        <h2>Function</h2>
+                        <p>Powers automation components safely and reliably.</p>
+                        <img src="{{ url_for('static', filename='images/materials/24V DC Power Supply.jpeg') }}"
+                            alt="24V DC Power Supply" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://docs.cirkitdesigner.com/component/f5d3cafc-79dc-4f24-8470-5eb27d3e655a/power-supply-24-vdc"
+                                    target="_blank">Cirkit Designer – 24V DC Power Supply</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 3/2 Directional Control Valve -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="3/2-Directional-Control-Valve">3/2 Directional Control Valve</h1>
+                        <h2>Definition</h2>
+                        <p>A valve with 3 ports (inlet, outlet/actuator, exhaust/return) and 2 positions.</p>
+                        <h2>Function</h2>
+                        <p>Used to control a single‑acting actuator or simple flow path. In one position it supplies
+                            fluid/air to the
+                            actuator, in the other it vents/exhausts the actuator allowing it to return or stop.</p>
+                        <img src="{{ url_for('static', filename='images/materials/3_2 Directional Control Valve.png') }}"
+                            alt="3/2 Directional Control Valve" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.mecfluid2.com/en/description-and-function-of-3-2-valves/"
+                                    target="_blank">Mecfluid
+                                    – 3/2 Valves</a></li>
+                            <li><a href="https://www.tameson.com/pages/32-way-pneumatic-valve" target="_blank">Tameson –
+                                    3/2
+                                    Pneumatic
+                                    Valve</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 4/2 Directional Control Valve -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="4/2-Directional-Control-Valve">4/2 Directional Control Valve</h1>
+                        <h2>Definition</h2>
+                        <p>A valve with 4 ports and 2 positions, typically used with double‑acting actuators or systems
+                            requiring
+                            reversing fluid/air flow.</p>
+                        <h2>Function</h2>
+                        <p>By switching positions, it connects supply to one actuator port and exhausts the other,
+                            enabling
+                            the actuator
+                            to extend or retract (forward/reverse motion).</p>
+                        <img src="{{ url_for('static', filename='images/materials/4_2 Directional Control Valve.jpeg') }}"
+                            alt="4/2 Directional Control Valve" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.tameson.com/pages/52-way-and-42-way-pneumatic-valve"
+                                    target="_blank">Tameson – 4/2
+                                    Pneumatic Valve</a></li>
+                            <li><a href="https://www.hydparts.com/blog/91/how-do-directional-control-valves-work"
+                                    target="_blank">HydParts – Directional Control Valves</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 4/3 Directional Control Valve -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="4/3-Directional-Control-Valve">4/3 Directional Control Valve</h1>
+                        <h2>Definition</h2>
+                        <p>A valve with 4 ports and 3 positions (commonly a 4‑way valve with a center/neutral position)
+                            used
+                            in
+                            hydraulic or pneumatic circuits.</p>
+                        <h2>Function</h2>
+                        <p>Allows extend, retract, or neutral/fluid‑blocked states for a double‑acting actuator enabling
+                            motion in
+                            either direction or holding the actuator stationary (locked or vented) depending on the
+                            center
+                            position
+                            design.</p>
+                        <img src="{{ url_for('static', filename='images/materials/4_3 Directional Control Valve.jpeg') }}"
+                            alt="4/3 Directional Control Valve" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.powermotiontech.com/technologies/other-technologies/article/21884325/book-2-chapter-8-directional-control-valves"
+                                    target="_blank">Power Motion Tech – Directional Control Valves</a></li>
+                            <li><a href="https://www.argo-hytos.com/products/valves/directional-control-valves.html"
+                                    target="_blank">Argo Hytos – Directional Control Valves</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 5/2 Directional Control Valve -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="5/2-Directional-Control-Valve">5/2 Directional Control Valve</h1>
+                        <h2>Definition</h2>
+                        <p>A valve with 5 ports and 2 positions, commonly used in pneumatic systems controlling
+                            double‑acting cylinders.
+                        </p>
+                        <h2>Function</h2>
+                        <p>Directs supply air (or fluid) alternately to one side of a double‑acting actuator while
+                            exhausting the other,
+                            enabling extend in one position and retract in the other. The extra port(s) allow separate
+                            exhaust paths for
+                            better control.</p>
+                        <img src="{{ url_for('static', filename='images/materials/5_2 Directional Control Valve.jpeg') }}"
+                            alt="5/2 Directional Control Valve" class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.tameson.com/pages/52-way-and-42-way-pneumatic-valve"
+                                    target="_blank">Tameson – 5/2
+                                    Pneumatic Valve</a></li>
+                            <li><a href="https://www.argo-hytos.com/products/valves/directional-control-valves.html"
+                                    target="_blank">Argo Hytos – Directional Control Valves</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 7400 IC (NAND) -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="7400-IC-(NAND)">7400 IC (NAND)</h1>
+                        <h2>Definition</h2>
+                        <p>7400 is a 7400-series TTL IC containing four independent 2-input NAND gates in a single
+                            14-pin
+                            DIP package.
+                        </p>
+                        <h2>Function</h2>
+                        <p>Each gate outputs LOW only when both inputs are HIGH; otherwise, the output is HIGH.</p>
+                        <img src="{{ url_for('static', filename='images/materials/7400 IC.png') }}" alt="7400 IC NAND"
+                            class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.build-electronic-circuits.com/7400-series-integrated-circuits/"
+                                    target="_blank">Build Electronic Circuits – 7400 Series ICs</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 7402 IC (NOR) -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="7402-IC-(NOR)">7402 IC (NOR)</h1>
+                        <h2>Definition</h2>
+                        <p>7402 is a 7400-series TTL IC containing four independent 2-input NOR gates in a single 14-pin
+                            DIP
+                            package.
+                        </p>
+                        <h2>Function</h2>
+                        <p>Each gate outputs HIGH only when both inputs are LOW; otherwise, the output is LOW.</p>
+                        <img src="{{ url_for('static', filename='images/materials/7402 IC.jpeg') }}" alt="7402 IC NOR"
+                            class="topic-image">
+                    </div>
+                </div>
+
+
+                <!-- 7404 IC (NOT) -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="7404-IC-(NOT)">7404 IC (NOT)</h1>
+                        <h2>Definition</h2>
+                        <p>7404 is a 7400-series TTL IC containing six independent NOT gates (inverters) in a single
+                            14-pin
+                            DIP package.
+                        </p>
+                        <h2>Function</h2>
+                        <p>Each gate outputs the logical inverse of its input: HIGH becomes LOW, LOW becomes HIGH.</p>
+                        <img src="{{ url_for('static', filename='images/materials/7404 IC.jpeg') }}" alt="7404 IC NOT"
+                            class="topic-image">
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://makerselectronics.com/product/7404-ic-not-gate-dip-14/"
+                                    target="_blank">Makers
+                                    Electronics – 7404 IC NOT Gate</a></li>
+                            <li><a href="https://www.makeyourownchip.com/7404html" target="_blank">MakeYourOwnChip –
+                                    74LS04
+                                    Hex
+                                    Inverter</a></li>
+                            <li><a href="https://www.ic-components.com/blog/7404-hex-inverter-a-comprehensive-guide-to-signal-inversion-in-digital-electronics.jsp"
+                                    target="_blank">IC Components – 7404 Hex Inverter Guide</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 7408 IC (AND) -->
+                <div class="topic-container">
+                    <div class="topic-text">
+                        <h1 id="7408-IC-(Quad-2-Input-AND-Gate)">7408 IC (Quad 2-Input AND Gate)</h1>
+                        <h2>Definition</h2>
+                        <p>7408 is a standard 7400-series TTL IC containing four independent 2-input AND gates in a
+                            single
+                            14-pin DIP
+                            package.</p>
+
+                        <h2>Function</h2>
+                        <p>For any one gate in 7408: the output is HIGH only when both inputs are HIGH.</p>
+
+                        <img src="{{ url_for('static', filename='images/materials/7408 IC.png') }}" alt="7408 IC AND"
+                            class="topic-image">
+
+                        <h2>Related Links</h2>
+                        <ul>
+                            <li><a href="https://www.futurlec.com/74/IC7408.shtml" target="_blank">Futurlec – IC
+                                    7408</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <script>
+                    document.addEventListener("DOMContentLoaded", () => {
+                        if (location.hash) {
+                            const el = document.querySelector(location.hash);
+                            if (el) {
+                                el.classList.add("highlight-glow");
+                                setTimeout(() => el.classList.remove("highlight-glow"), 2000);
+                            }
+                        }
+                    });
+                </script>
+</body>
+
+</html>

@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Materials</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+
+
+
+    <div id="loading-overlay">
+        <div class="gear-spinner">
+            <span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span>
+        </div>
+    </div>
+
+
+
+
+    <div class="container">
+        <h1 class="gradient-title">Materials Glossary</h1>
+        <p class="subtitle">Browse all materials below</p>
+
+
+        <!-- Advanced mode button -->
+        <a href="{{ url_for('index') }}" class="top-button">
+            Back to Homepage
+        </a>
+
+    </div>
+
+    </div>
+
+
+    </div>
+
+    </header>
+    <section class="glossary-list">
+        <!-- Actuators -->
+        <article class="glossary-item">
+            <h2>Actuators</h2>
+            <p>Devices that convert electrical signals into physical movement; used to move or control mechanical
+                systems
+                (motors, cylinders, robotic arms).</p>
+        </article>
+
+        <!-- Analog I/O Modules -->
+        <article class="glossary-item">
+            <h2>Analog Input/Output Modules (4–20mA, 0–10V)</h2>
+            <p>Modules that bridge analog sensors and digital systems using A/D and D/A conversion; common ranges:
+                4–20mA,
+                0–10V.</p>
+        </article>
+
+        <!-- Arduino -->
+        <article class="glossary-item">
+            <h2>Arduino</h2>
+            <p>Microcontroller platform for prototyping and embedded projects; reads sensors and drives actuators.
+            </p>
+        </article>
+
+        <!-- Automatic Valve Control -->
+        <article class="glossary-item">
+            <h2>Automatic Valve Control</h2>
+            <p>Valves actuated by solenoids, pilots or sensors to automate flow control without human intervention.
+            </p>
+        </article>
+
+        <!-- Belt Drive -->
+        <article class="glossary-item">
+            <h2>Belt Drive</h2>
+            <p>Mechanical system using belts to transmit power between rotating shafts; smooth and flexible
+                transmission.
+            </p>
+        </article>
+
+        <!-- Blue LED -->
+        <article class="glossary-item">
+            <h2>Blue LED</h2>
+            <p>LED emitting in the 450–495 nm range used in displays and RGB lighting.</p>
+        </article>
+
+        <!-- Breadboard -->
+        <article class="glossary-item">
+            <h2>Breadboard</h2>
+            <p>Solderless prototyping board for building and testing circuits quickly.</p>
+        </article>
+
+        <!-- Bridge Rectifier Module -->
+        <article class="glossary-item">
+            <h2>Bridge Rectifier Module</h2>
+            <p>Four-diode bridge used for full-wave rectification to convert AC to DC in power supplies.</p>
+        </article>
+
+        <!-- CAN Interface Module -->
+        <article class="glossary-item">
+            <h2>CAN Interface Module</h2>
+            <p>Enables communication over Controller Area Network (CAN) for distributed device networking.</p>
+        </article>
+
+        <!-- Capacitor -->
+        <article class="glossary-item">
+            <h2>Capacitor</h2>
+            <p>Stores and releases electrical energy; used for filtering, smoothing, timing and transient
+                suppression.</p>
+        </article>
+
+        <!-- Carbon Film Resistor -->
+        <article class="glossary-item">
+            <h2>Carbon Film Resistor</h2>
+            <p>Fixed resistor type made by depositing carbon film; common, inexpensive general-purpose resistor.</p>
+        </article>
+
+        <!-- Carbon Zinc Dry Cell Batteries -->
+        <article class="glossary-item">
+            <h2>Carbon Zinc Dry Cell Batteries</h2>
+            <p>Primary cells used in low-cost portable devices; non-rechargeable.</p>
+        </article>
+
+        <!-- Chain -->
+        <article class="glossary-item">
+            <h2>Chain</h2>
+            <p>Linked metal segments used to transmit rotary motion between sprockets with minimal slip.</p>
+        </article>
+
+        <!-- CNC Machines -->
+        <article class="glossary-item">
+            <h2>CNC Machines</h2>
+            <p>Computer-controlled machines for precise subtractive manufacturing tasks.</p>
+        </article>
+
+        <!-- Coil -->
+        <article class="glossary-item">
+            <h2>Coil</h2>
+            <p>Wound conductor generating magnetic field when current flows; used in relays, inductors and motors.
+            </p>
+        </article>
+
+        <!-- Computer / Laptop -->
+        <article class="glossary-item">
+            <h2>Computer / Laptop</h2>
+            <p>Used to program controllers, log data and analyze experiments.</p>
+        </article>
+
+        <!-- Control Relay -->
+        <article class="glossary-item">
+            <h2>Control Relay</h2>
+            <p>Electrically operated switch that uses a low-power input to switch higher-power circuits.</p>
+        </article>
+
+        <!-- Control Valves -->
+        <article class="glossary-item">
+            <h2>Control Valves</h2>
+            <p>Final control elements that modulate flow, pressure or level based on controller signals.</p>
+        </article>
+
+        <!-- Conveyor Systems -->
+        <article class="glossary-item">
+            <h2>Conveyor Systems</h2>
+            <p>Mechanical systems to transport materials along a fixed path in manufacturing and logistics.</p>
+        </article>
+
+        <!-- Copper Bars -->
+        <article class="glossary-item">
+            <h2>Copper Bars</h2>
+            <p>Conductive busbars used for power distribution inside panels and enclosures.</p>
+        </article>
+
+        <!-- Copper Wire -->
+        <article class="glossary-item">
+            <h2>Copper Wire</h2>
+            <p>Common conductor for electrical wiring due to high conductivity and ductility.</p>
+        </article>
+
+        <!-- Coupling Shaft -->
+        <article class="glossary-item">
+            <h2>Coupling Shaft</h2>
+            <p>Connects motor shaft to driven load, transferring torque and compensating slight misalignment.</p>
+        </article>
+
+        <!-- CPU Module -->
+        <article class="glossary-item">
+            <h2>CPU Module (Processor)</h2>
+            <p>Processing unit in PLCs/controllers that executes logic and coordinates I/O.</p>
+        </article>
+
+        <!-- Data Logger -->
+        <article class="glossary-item">
+            <h2>Data Logger</h2>
+            <p>Device that records sensor data over time for analysis and troubleshooting.</p>
+        </article>
+
+        <!-- DHT11 Sensor -->
+        <article class="glossary-item">
+            <h2>DHT11 Sensor</h2>
+            <p>Basic temperature and humidity sensor for simple monitoring tasks.</p>
+        </article>
+
+        <!-- Digital Input Module -->
+        <article class="glossary-item">
+            <h2>Digital Input Module</h2>
+            <p>Monitors discrete ON/OFF signals from switches and sensors to the controller.</p>
+        </article>
+
+        <!-- Digital Ohmmeter -->
+        <article class="glossary-item">
+            <h2>Digital Ohmmeter</h2>
+            <p>Measures resistance digitally for component testing and troubleshooting.</p>
+        </article>
+
+        <!-- Digital Output Module -->
+        <article class="glossary-item">
+            <h2>Digital Output Module (relay, transistor, triac)</h2>
+            <p>Sends binary signals from controllers to actuators; types include relay (mechanical), transistor (DC)
+                and
+                triac (AC).</p>
+        </article>
+
+        <!-- Double Solenoid 5/2 Valve -->
+        <article class="glossary-item">
+            <h2>Double Solenoid 5/2 Valve</h2>
+            <p>Pneumatic valve with two solenoids and five ports used to control double-acting cylinders.</p>
+        </article>
+
+        <!-- Driven Gear -->
+        <article class="glossary-item">
+            <h2>Driven Gear</h2>
+            <p>Gear that receives motion from the driving gear and changes speed or torque according to ratio.</p>
+        </article>
+
+        <!-- Driving Gear -->
+        <article class="glossary-item">
+            <h2>Driving Gear</h2>
+            <p>Input gear that transmits motion and torque into a gear train.</p>
+        </article>
+
+        <!-- Electro Pneumatic Converters -->
+        <article class="glossary-item">
+            <h2>Electro Pneumatic Converters</h2>
+            <p>Convert electrical controller signals (4–20mA or 0–10V) into proportional pneumatic pressure for
+                actuators.
+            </p>
+        </article>
+
+        <!-- Electrolytes -->
+        <article class="glossary-item">
+            <h2>Electrolytes</h2>
+            <p>Substances that produce ions when dissolved; essential for batteries and electrochemical processes.
+            </p>
+        </article>
+
+        <!-- Electrical Terminal Block -->
+        <article class="glossary-item">
+            <h2>Electrical Terminal Block</h2>
+            <p>Provides secure, organized connections for multiple wires in panels and enclosures.</p>
+        </article>
+
+        <!-- Electrical Timer Base Socket -->
+        <article class="glossary-item">
+            <h2>Electrical Timer Base Socket</h2>
+            <p>Mounting base that holds and connects plug-in electronic timers for easy replacement and wiring.</p>
+        </article>
+
+        <!-- Electronic Timer -->
+        <article class="glossary-item">
+            <h2>Electronic Timer</h2>
+            <p>Provides timed ON/OFF control for relays and solenoids in automated sequences.</p>
+        </article>
+
+        <!-- Emergency Stop Switches -->
+        <article class="glossary-item">
+            <h2>Emergency Stop Switches</h2>
+            <p>Fail-safe switches that immediately remove power to machinery to protect operators.</p>
+        </article>
+
+        <!-- Ethernet Switch -->
+        <article class="glossary-item">
+            <h2>Ethernet Switch</h2>
+            <p>Network device connecting multiple Ethernet devices and forwarding data packets in LANs.</p>
+        </article>
+
+        <!-- Feedback Encoder -->
+        <article class="glossary-item">
+            <h2>Feedback Encoder</h2>
+            <p>Provides position/speed feedback from motor shafts to controllers for closed-loop control.</p>
+        </article>
+
+        <!-- Fieldbus Cable -->
+        <article class="glossary-item">
+            <h2>Fieldbus Cable</h2>
+            <p>Cable used to connect devices on fieldbus networks, enabling distributed device communication.</p>
+        </article>
+
+        <!-- Flow Control Pumps -->
+        <article class="glossary-item">
+            <h2>Flow Control Pumps</h2>
+            <p>Pumps whose output can be adjusted by controllers to regulate flow rate and pressure in processes.
+            </p>
+        </article>
+
+        <!-- Flowchart Diagramming Tool -->
+        <article class="glossary-item">
+            <h2>Flowchart Diagramming Tool</h2>
+            <p>Software used to visualize control logic and process flow for design and troubleshooting.</p>
+        </article>
+
+        <!-- Forklifts -->
+        <article class="glossary-item">
+            <h2>Forklifts</h2>
+            <p>Industrial trucks used to lift and move heavy loads in warehouses and factories.</p>
+        </article>
+
+        <!-- Fossil Fuels -->
+        <article class="glossary-item">
+            <h2>Fossil Fuels</h2>
+            <p>Coal, oil and natural gas used as energy sources for power and transportation.</p>
+        </article>
+
+        <!-- Full Joint -->
+        <article class="glossary-item">
+            <h2>Full Joint</h2>
+            <p>Kinematic connection providing full intended relative motion between links.</p>
+        </article>
+
+        <!-- Generator -->
+        <article class="glossary-item">
+            <h2>Generator</h2>
+            <p>Converts mechanical energy into electrical energy for supply or testing purposes.</p>
+        </article>
+
+        <!-- Grinder -->
+        <article class="glossary-item">
+            <h2>Grinder</h2>
+            <p>Machine tool for abrasion, finishing and material removal to tight tolerances.</p>
+        </article>
+
+        <!-- Green LED -->
+        <article class="glossary-item">
+            <h2>Green LED</h2>
+            <p>LED emitting in the 495–570 nm range used for status indicators and signaling.</p>
+        </article>
+
+        <!-- Hot-Wire Ammeter -->
+        <article class="glossary-item">
+            <h2>Hot-Wire Ammeter</h2>
+            <p>Measures current by detecting thermal expansion of a wire; useful for high-frequency measurements.
+            </p>
+        </article>
+
+        <!-- Hydraulic Turbines -->
+        <article class="glossary-item">
+            <h2>Hydraulic Turbines</h2>
+            <p>Convert water flow energy to mechanical energy for electricity generation.</p>
+        </article>
+
+        <!-- Inductive Proximity Sensor -->
+        <article class="glossary-item">
+            <h2>Inductive Proximity Sensor</h2>
+            <p>Detects metal objects using electromagnetic fields; used for position and presence sensing.</p>
+        </article>
+
+        <!-- Indicators / Gauges -->
+        <article class="glossary-item">
+            <h2>Indicators / Gauges</h2>
+            <p>Display instruments for pressure, level, temperature and other process variables.</p>
+        </article>
+
+        <!-- Industrial Router -->
+        <article class="glossary-item">
+            <h2>Industrial Router</h2>
+            <p>Rugged networking device for industrial environments enabling protocol bridging and remote access.
+            </p>
+        </article>
+
+        <!-- Jumper Wire -->
+        <article class="glossary-item">
+            <h2>Jumper Wire</h2>
+            <p>Short insulated wires for connecting points on breadboards and prototypes.</p>
+        </article>
+
+        <!-- Lead-Acid Batteries -->
+        <article class="glossary-item">
+            <h2>Lead‑Acid Batteries</h2>
+            <p>Rechargeable batteries used for vehicle starting, backup power and industrial applications.</p>
+        </article>
+
+        <!-- LED Holder -->
+        <article class="glossary-item">
+            <h2>LED Holder</h2>
+            <p>Socket or clip securing LEDs and protecting leads while allowing easy replacement.</p>
+        </article>
+
+        <!-- Light Emitting Diode (LED) -->
+        <article class="glossary-item">
+            <h2>Light Emitting Diode (LED)</h2>
+            <p>Semiconductor that emits light when forward-biased; used for indicators and lighting.</p>
+        </article>
+
+        <!-- Limit Switch Sensor -->
+        <article class="glossary-item">
+            <h2>Limit Switch Sensor</h2>
+            <p>Mechanical switch that detects physical movement when an actuator reaches a position. Provides
+                positional
+                feedback to timers or relays.</p>
+        </article>
+
+        <!-- Limit Switches -->
+        <article class="glossary-item">
+            <h2>Limit Switches</h2>
+            <p>Switch operated by motion of a machine part or presence of an object; used to detect mechanical
+                movement or
+                position.</p>
+        </article>
+
+        <!-- Lithium Batteries -->
+        <article class="glossary-item">
+            <h2>Lithium Batteries</h2>
+            <p>High‑energy, lightweight batteries used in electronics, EVs and renewable systems for portable energy
+                storage.</p>
+        </article>
+
+        <!-- Machine -->
+        <article class="glossary-item">
+            <h2>Machine</h2>
+            <p>Device that converts input energy into useful mechanical work through mechanisms and actuators.</p>
+        </article>
+
+        <!-- Magnets -->
+        <article class="glossary-item">
+            <h2>Magnets</h2>
+            <p>Materials producing magnetic fields; used in motors, generators, sensors and data storage devices.
+            </p>
+        </article>
+
+        <!-- Manual (Valve) -->
+        <article class="glossary-item">
+            <h2>Manual (Valve)</h2>
+            <p>Valve operated directly by a human via lever or knob to start, stop or change fluid flow; used for
+                simple/manual control.</p>
+        </article>
+
+        <!-- Mercury Oxide Batteries -->
+        <article class="glossary-item">
+            <h2>Mercury Oxide Batteries</h2>
+            <p>Primary cells providing stable voltage for precision equipment; largely replaced due to environmental
+                concerns.</p>
+        </article>
+
+        <!-- Microcontroller Demo Board -->
+        <article class="glossary-item">
+            <h2>Microcontroller Demo Board</h2>
+            <p>Small board with a microcontroller used to demonstrate programming, interfacing and embedded
+                concepts.</p>
+        </article>
+
+        <!-- Motor Driver Module (L298N) -->
+        <article class="glossary-item">
+            <h2>Motor Driver Module (L298N)</h2>
+            <p>Module that controls DC/stepper motors, allowing microcontrollers to drive higher-current motors
+                safely.</p>
+        </article>
+
+        <!-- Multimeter -->
+        <article class="glossary-item">
+            <h2>Multimeter</h2>
+            <p>Instrument for measuring voltage, current and resistance; essential for testing and troubleshooting
+                circuits.
+            </p>
+        </article>
+
+        <!-- Oscilloscope -->
+        <article class="glossary-item">
+            <h2>Oscilloscope</h2>
+            <p>Instrument that displays voltage waveforms over time to analyze signal shape, timing and behavior.
+            </p>
+        </article>
+
+        <!-- Pneumatic Cylinder -->
+        <article class="glossary-item">
+            <h2>Pneumatic Cylinder</h2>
+            <p>Device converting compressed air into linear motion for extension and retraction in automation
+                systems.</p>
+        </article>
+
+        <!-- Positioners for Valves & Dampers -->
+        <article class="glossary-item">
+            <h2>Positioners for Valves & Dampers</h2>
+            <p>Auxiliary devices that ensure actuators reach the correct physical position corresponding to
+                controller
+                output using local feedback.</p>
+        </article>
+
+        <!-- Potentiometer -->
+        <article class="glossary-item">
+            <h2>Potentiometer</h2>
+            <p>Adjustable resistor used to vary voltage or signal levels for tuning, calibration or user input.</p>
+        </article>
+
+        <!-- Power Adapter -->
+        <article class="glossary-item">
+            <h2>Power Adapter</h2>
+            <p>Device that converts mains AC to the required DC voltage/current for controllers, servos or
+                electronics.</p>
+        </article>
+
+        <!-- Power Supply Module (24V DC, 120/240V AC) -->
+        <article class="glossary-item">
+            <h2>Power Supply Module (24V DC, 120/240V AC)</h2>
+            <p>Converts AC mains or other inputs into regulated DC voltages to power CPU, I/O and peripherals in
+                control
+                systems.</p>
+        </article>
+
+        <!-- Power Supply Unit -->
+        <article class="glossary-item">
+            <h2>Power Supply Unit</h2>
+            <p>Regulated supply that provides required energy for drivers and motors, sized to match voltage/current
+                needs
+                of the load.</p>
+        </article>
+
+        <!-- Pressure Compensation -->
+        <article class="glossary-item">
+            <h2>Pressure Compensation</h2>
+            <p>Techniques or components used to keep system pressure stable under varying load or demand to protect
+                performance and safety.</p>
+        </article>
+
+        <!-- Pressure Gauge -->
+        <article class="glossary-item">
+            <h2>Pressure Gauge</h2>
+            <p>Instrument that measures and indicates fluid pressure in hydraulic or pneumatic systems for
+                monitoring and
+                safety.</p>
+        </article>
+
+        <!-- Pressure Regulator -->
+        <article class="glossary-item">
+            <h2>Pressure Regulator</h2>
+            <p>Valve that reduces a variable input pressure to a stable, lower output pressure to protect downstream
+                equipment and ensure consistent operation.</p>
+        </article>
+
+
+        <!-- Pressure Transducer -->
+        <article class="glossary-item">
+            <h2>Pressure Transducer</h2>
+            <p>Sensor that converts fluid pressure into an electrical signal (voltage/current) for monitoring,
+                control and
+                data logging.</p>
+        </article>
+
+        <!-- Pressure Relief Valve -->
+        <article class="glossary-item">
+            <h2>Pressure Relief Valve</h2>
+            <p>Safety valve that opens when pressure exceeds a preset limit to divert excess fluid and protect the
+                system
+                from overpressure.</p>
+        </article>
+
+        <!-- Projector / Computer -->
+        <article class="glossary-item">
+            <h2>Projector / Computer</h2>
+            <p>Devices used for presentations and for programming/monitoring controllers and experiments.</p>
+        </article>
+
+        <!-- Proximity Sensor -->
+        <article class="glossary-item">
+            <h2>Proximity Sensor</h2>
+            <p>Non‑contact sensor detecting presence or absence of objects using inductive, capacitive, ultrasonic
+                or
+                photoelectric principles.</p>
+        </article>
+
+        <!-- Pulse Generator -->
+        <article class="glossary-item">
+            <h2>Pulse Generator</h2>
+            <p>Device that generates electrical pulses (and direction signals) to drive stepper drivers, controlling
+                steps
+                and speed of stepper motors.</p>
+        </article>
+
+        <!-- Push Buttons (NO/NC) -->
+        <article class="glossary-item">
+            <h2>Push Buttons (NO/NC)</h2>
+            <p>Momentary switches: NO closes when pressed, NC opens when pressed; used for start, stop and reset
+                functions.
+            </p>
+        </article>
+
+        <!-- Raw Materials (RAM) -->
+        <article class="glossary-item">
+            <h2>Raw Materials (RAM)</h2>
+            <p>Basic substances (metals, plastics, wood) used as inputs in manufacturing processes.</p>
+        </article>
+
+        <!-- Red LED -->
+        <article class="glossary-item">
+            <h2>Red LED</h2>
+            <p>LED emitting in the red wavelength (≈620–750 nm), commonly used as indicators and signals.</p>
+        </article>
+
+        <!-- Reed Switch -->
+        <article class="glossary-item">
+            <h2>Reed Switch</h2>
+            <p>Magnetically operated sealed switch used to detect piston movement and for discrete position sensing.
+            </p>
+        </article>
+
+        <!-- Relay Module -->
+        <article class="glossary-item">
+            <h2>Relay Module</h2>
+            <p>Electrically operated switch controlled by low-voltage signals to switch higher-power devices safely.
+            </p>
+        </article>
+
+        <!-- Resistor -->
+        <article class="glossary-item">
+            <h2>Resistor</h2>
+            <p>Component that limits or regulates current; used for protection, voltage division and biasing.</p>
+        </article>
+
+        <!-- Resistor Kit -->
+        <article class="glossary-item">
+            <h2>Resistor Kit</h2>
+            <p>Assortment of resistors of various values useful for prototyping and learning.</p>
+        </article>
+
+        <!-- Robotic Arms -->
+        <article class="glossary-item">
+            <h2>Robotic Arms</h2>
+            <p>Programmable mechanical arms performing tasks like welding, assembly and material handling in
+                automation.</p>
+        </article>
+
+        <!-- RS485 Converter -->
+        <article class="glossary-item">
+            <h2>RS485 Converter</h2>
+            <p>Device converting RS‑485 serial to Ethernet or other protocols to integrate legacy devices with
+                modern
+                networks.</p>
+        </article>
+
+        <!-- Sample Embedded Devices -->
+        <article class="glossary-item">
+            <h2>Sample Embedded Devices</h2>
+            <p>Pre‑built microcontroller systems used for study and demonstration of embedded functionality.</p>
+        </article>
+
+        <!-- Safety Pressure Limits -->
+        <article class="glossary-item">
+            <h2>Safety Pressure Limits</h2>
+            <p>Maximum allowable pressures enforced by relief valves or regulators to protect equipment and
+                personnel.</p>
+        </article>
+
+        <!-- Screw Pair -->
+        <article class="glossary-item">
+            <h2>Screw Pair</h2>
+            <p>Kinematic pair converting rotary into linear motion; used in lead screws and actuators.</p>
+        </article>
+
+        <!-- Selector Switches -->
+        <article class="glossary-item">
+            <h2>Selector Switches</h2>
+            <p>Multi‑position manual switches used to select modes (Auto/Manual/Jog) or redirect circuits.</p>
+        </article>
+
+        <!-- Sensor Indicator Module -->
+        <article class="glossary-item">
+            <h2>Sensor Indicator Module</h2>
+            <p>Module with LEDs showing sensor ON/OFF status to aid testing and troubleshooting.</p>
+        </article>
+
+        <!-- Sensor Mounting Bracket -->
+        <article class="glossary-item">
+            <h2>Sensor Mounting Bracket</h2>
+            <p>Bracket for securing sensors with correct alignment to ensure detection accuracy.</p>
+        </article>
+
+        <!-- Sensors -->
+        <article class="glossary-item">
+            <h2>Sensors</h2>
+            <p>Devices that detect physical parameters (temperature, distance, light) and provide signals to
+                controllers.
+            </p>
+        </article>
+
+        <!-- Sequence Valve -->
+        <article class="glossary-item">
+            <h2>Sequence Valve</h2>
+            <p>Valve that coordinates operations so one actuator acts only after a prior function completes or
+                specified
+                pressure is reached.</p>
+        </article>
+
+        <!-- Servo Controller -->
+        <article class="glossary-item">
+            <h2>Servo Controller</h2>
+            <p>Drive unit that powers a servo motor, interprets commands and uses feedback to achieve precise motion
+                control.</p>
+        </article>
+
+        <!-- Servo Motor -->
+        <article class="glossary-item">
+            <h2>Servo Motor</h2>
+            <p>Motor used in closed‑loop systems to provide precise position, speed or torque under controller
+                command.</p>
+        </article>
+
+        <!-- Sheave -->
+        <article class="glossary-item">
+            <h2>Sheave</h2>
+            <p>Pulley wheel used in belt or rope drives to guide belts and transmit power efficiently.</p>
+        </article>
+
+        <!-- Shielded Cable -->
+        <article class="glossary-item">
+            <h2>Shielded Cable</h2>
+            <p>Cable with conductive shield to block EMI and preserve signal integrity for sensitive/analog wiring.
+            </p>
+        </article>
+
+        <!-- Signal Cable Set -->
+        <article class="glossary-item">
+            <h2>Signal Cable Set</h2>
+            <p>Wiring assembly connecting controller, motor, encoder and power to transmit commands and feedback.
+            </p>
+        </article>
+
+        <!-- Signal Conditioner -->
+        <article class="glossary-item">
+            <h2>Signal Conditioner</h2>
+            <p>Module that amplifies, filters or converts sensor outputs into standardized signals (0–10V, 4–20mA)
+                for
+                controllers.</p>
+        </article>
+
+        <!-- Silicon -->
+        <article class="glossary-item">
+            <h2>Silicon</h2>
+            <p>Semiconductor material forming the substrate for microchips; doped to create regions for transistors
+                and
+                logic circuits.</p>
+        </article>
+
+
+        <!-- Solar Panel -->
+        <article class="glossary-item">
+            <h2>Solar Panel</h2>
+            <p>Device converting sunlight into electricity using photovoltaic cells for renewable power.</p>
+        </article>
+
+        <!-- Solenoid Valve -->
+        <article class="glossary-item">
+            <h2>Solenoid Valve</h2>
+            <p>Electrically controlled valve that directs airflow for pneumatic cylinder extension/retraction in
+                automated
+                circuits.</p>
+        </article>
+
+        <!-- Spherical Pair -->
+        <article class="glossary-item">
+            <h2>Spherical Pair</h2>
+            <p>Kinematic joint allowing rotation in all directions (ball-and-socket), providing three degrees of
+                freedom.
+            </p>
+        </article>
+
+        <!-- Start Push Button -->
+        <article class="glossary-item">
+            <h2>Start Push Button</h2>
+            <p>Momentary switch used to energize circuits or start machines by completing the circuit while pressed.
+            </p>
+        </article>
+
+        <!-- Stepper Driver Module -->
+        <article class="glossary-item">
+            <h2>Stepper Driver Module</h2>
+            <p>Module that receives pulse+direction signals and sequences currents to stepper motor coils to produce
+                controlled steps.</p>
+        </article>
+
+        <!-- Stepper Motor -->
+        <article class="glossary-item">
+            <h2>Stepper Motor</h2>
+            <p>Motor that converts discrete pulses into precise incremental rotations; used for accurate positioning
+                tasks.
+            </p>
+        </article>
+
+
+
+        <!-- Switch -->
+        <article class="glossary-item">
+            <h2>Switch</h2>
+            <p>Device that opens or closes an electrical circuit to control power or signals.</p>
+        </article>
+
+        <!-- Temperature Sensor -->
+        <article class="glossary-item">
+            <h2>Temperature Sensor</h2>
+            <p>Device measuring temperature and converting it to an electrical signal for monitoring and control.
+            </p>
+        </article>
+
+        <!-- Terminal -->
+        <article class="glossary-item">
+            <h2>Terminal</h2>
+            <p>Connection point for wires or components providing secure and reliable electrical connections.</p>
+        </article>
+
+        <!-- Timer & Clock Demo Circuits -->
+        <article class="glossary-item">
+            <h2>Timer & Clock Demo Circuits</h2>
+            <p>Circuits demonstrating timing functions, pulse generation and delay behavior for educational
+                purposes.</p>
+        </article>
+
+        <!-- Transistors -->
+        <article class="glossary-item">
+            <h2>Transistors</h2>
+            <p>Semiconductor switches used for amplification and switching; fundamental building blocks of digital
+                logic and
+                electronics.</p>
+        </article>
+
+        <!-- Voltmeter -->
+        <article class="glossary-item">
+            <h2>Voltmeter</h2>
+            <p>Instrument for measuring electric potential difference between two points.</p>
+        </article>
+
+        <!-- Wattmeter -->
+        <article class="glossary-item">
+            <h2>Wattmeter</h2>
+            <p>Instrument that measures real electrical power consumed by a circuit using combined voltage and
+                current
+                sensing.</p>
+        </article>
+
+        <!-- Welding Equipment -->
+        <article class="glossary-item">
+            <h2>Welding Equipment</h2>
+            <p>Tools and machines used to join materials by heat or pressure for manufacturing and repair.</p>
+        </article>
+
+
+        <!-- Wire Leads -->
+        <article class="glossary-item">
+            <h2>Wire Leads</h2>
+            <p>Insulated conductors used to make electrical connections on breadboards or PCBs during prototyping.
+            </p>
+        </article>
+
+        <!-- Wiring Tools -->
+        <article class="glossary-item">
+            <h2>Wiring Tools</h2>
+            <p>Tools such as wire strippers, cutters and crimpers used for building and maintaining electrical
+                connections
+                safely.</p>
+        </article>
+
+        <!-- Zener Diode -->
+        <article class="glossary-item">
+            <h2>Zener Diode</h2>
+            <p>Diode designed to allow reverse conduction at a specified voltage for voltage regulation and
+                protection
+                circuits.</p>
+        </article>
+
+        <!-- 1N4007 Rectifier Diode -->
+        <article class="glossary-item">
+            <h2>1N4007 Rectifier Diode</h2>
+            <p>General-purpose rectifier diode (≈1A, up to 1000V reverse) used in power supplies for AC→DC
+                conversion.</p>
+        </article>
+
+        <!-- 24V DC Power Supply -->
+        <article class="glossary-item">
+            <h2>24V DC Power Supply</h2>
+            <p>Provides stable 24V DC commonly used to power sensors, relays and PLC I/O modules.</p>
+        </article>
+
+        <!-- 3/2 Directional Control Valve -->
+        <article class="glossary-item">
+            <h2>3/2 Directional Control Valve</h2>
+            <p>Three-port, two-position valve used to supply or vent single-acting actuators.</p>
+        </article>
+
+        <!-- 3D Printers -->
+        <article class="glossary-item">
+            <h2>3D Printers</h2>
+            <p>Additive manufacturing machines that build parts layer-by-layer from digital models.</p>
+        </article>
+
+        <!-- 4/2 Directional Control Valve -->
+        <article class="glossary-item">
+            <h2>4/2 Directional Control Valve</h2>
+            <p>Four-port, two-position valve used with double-acting actuators to alternate supply and exhaust.</p>
+        </article>
+
+        <!-- 4/3 Directional Control Valve -->
+        <article class="glossary-item">
+            <h2>4/3 Directional Control Valve</h2>
+            <p>Four-port, three-position valve providing extend, retract and neutral/hold states for actuators.</p>
+        </article>
+
+        <!-- 5/2 Directional Control Valve -->
+        <article class="glossary-item">
+            <h2>5/2 Directional Control Valve</h2>
+            <p>Five-port, two-position valve commonly used to control double-acting pneumatic cylinders with
+                separate
+                exhausts.</p>
+        </article>
+
+        <!-- 7400 IC (NAND) -->
+        <article class="glossary-item">
+            <h2>7400 IC (NAND)</h2>
+            <p>TTL IC with four independent 2-input NAND gates in a 14-pin DIP package; fundamental logic building
+                block.
+            </p>
+        </article>
+
+        <!-- 7402 IC (NOR) -->
+        <article class="glossary-item">
+            <h2>7402 IC (NOR)</h2>
+            <p>TTL IC implementing NOR gates; output HIGH only when all inputs are LOW.</p>
+        </article>
+
+        <!-- 7404 IC (NOT Gate) -->
+        <article class="glossary-item">
+            <h2>7404 IC (NOT Gate)</h2>
+            <p>TTL IC containing six independent inverters (NOT gates); outputs the logical complement of inputs.
+            </p>
+        </article>
+
+        <!-- 7408 IC (AND Gate) -->
+        <article class="glossary-item">
+            <h2>7408 IC (AND Gate)</h2>
+            <p>TTL IC with four 2‑input AND gates; output HIGH only when both inputs are HIGH.</p>
+        </article>
+        <!-- 7432 IC (OR Gate) -->
+        <article class="glossary-item">
+            <h2>7432 IC (OR Gate)</h2>
+            <p>TTL IC containing four 2‑input OR gates; output HIGH if at least one input is HIGH.</p>
+        </article>
+
+    </section>
+
+    <footer>
+        <a href="{{ url_for('glossary.material_topic') }}" class="floating-button">
+            Go to Advanced Materials
+        </a>
+        <script>
+            document.querySelectorAll(".nav-link, .top-button").forEach(function (link) {
+                console.log("Attaching handler to:", link.href);
+                link.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    console.log("Overlay triggered for " + link.href);
+                    const overlay = document.getElementById("loading-overlay");
+                    overlay.style.visibility = "visible";
+
+                    setTimeout(function () {
+                        console.log("Navigating to " + link.href);
+                        window.location = link.href;
+                    }, 1500);
+                });
+            });
+
+            window.addEventListener("load", function () {
+                console.log("Overlay hidden on load");
+                document.getElementById("loading-overlay").style.visibility = "hidden";
+            });
+        </script>
+
+
+
+
+</body>
+
+</html>

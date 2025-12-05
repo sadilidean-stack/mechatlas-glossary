@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MechAtlas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <!-- Overlay -->
+    <div id="loading-overlay">
+        <div class="gear-spinner">
+            <span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>
+            <img src="{{ url_for('static', filename='images/MECHATLAS.png') }}" alt="MechAtlas Logo" class="logo">
+            <h1 class="gradient-title">MechAtlas</h1>
+            <p class="subtitle">A Comprehensive Glossary of Mechatronics and Automation</p>
+        </header>
+
+        <!-- Search bar -->
+             <!-- Notice above search bar -->
+    <p class="notice">⚠️ MechAtlas search is case and space sensitive</p>
+        <form action="{{ url_for('glossary.search') }}" method="get" class="search-bar">
+            <input type="text" name="q" placeholder="Search glossary..." class="search-input" required>
+            <button type="submit" class="search-button">
+                <i class="fas fa-search"></i>
+            </button>
+        </form>
+
+
+        <!-- Navigation links (Basic Mode only) -->
+        <div class="section-links-vertical">
+            <a href="{{ url_for('glossary.concepts') }}" class="section-button large">
+                Concepts & Theories
+            </a>
+            <a href="{{ url_for('glossary.materials') }}" class="section-button large">
+                Materials & Equipment
+            </a>
+        </div>
+    </div>
+
+    <!-- Overlay script -->
+    <script>
+        // Handle nav links
+        document.querySelectorAll(".nav-link, .section-button").forEach(function (link) {
+            link.addEventListener("click", function (e) {
+                e.preventDefault();
+                const overlay = document.getElementById("loading-overlay");
+                overlay.style.visibility = "visible";
+                setTimeout(function () { window.location = link.href; }, 1500);
+            });
+        });
+
+        // Handle search form
+        document.querySelector(".search-bar").addEventListener("submit", function () {
+            const overlay = document.getElementById("loading-overlay");
+            overlay.style.visibility = "visible";
+        });
+
+        // Hide overlay on page load
+        window.addEventListener("load", function () {
+            document.getElementById("loading-overlay").style.visibility = "hidden";
+        });
+    </script>
+
+
+</body>
+</html>

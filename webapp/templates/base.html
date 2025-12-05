@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="{{ url_for('static', filename='js/autocomplete.js') }}"></script>
+  <meta charset="UTF-8">
+  <title>{% block title %}MechAtlas Glossary{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <header>
+    <nav>
+      <form action="{{ url_for('search') }}" method="get" style="position:relative;">
+        <input type="text" id="search-bar" name="q" placeholder="Search glossary...">
+        <div id="suggestions"></div>
+      </form>
+    </nav>
+  </header>
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <script src="{{ url_for('static', filename='js/highlight.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/autocomplete.js') }}"></script>
+</body>
+</html>
