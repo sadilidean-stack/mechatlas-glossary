@@ -22,7 +22,10 @@ def create_app():
 
     return app
 
+# ✅ Expose app globally so Gunicorn can see it
+app = create_app()
+
 if __name__ == "__main__":
-    app = create_app()
     print("Template folder:", app.template_folder)  # sanity check
     app.run(debug=True)
+
